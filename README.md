@@ -6,7 +6,8 @@ Static site redesign for [AI Academy for Beginners](https://www.aiacademyforbegi
 
 | File | Page |
 |------|------|
-| `aiacademy-redesign-2026.html` | Homepage |
+| `index.html` | Homepage (Netlify entry point) |
+| `aiacademy-redesign-2026.html` | Homepage (source copy) |
 | `plans.html` | Plans / Pricing |
 | `faq.html` | FAQs |
 | `contact-us.html` | Contact |
