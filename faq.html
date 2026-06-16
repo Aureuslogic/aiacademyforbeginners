@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>FAQs | AI Academy for Beginners</title>
+<meta name="description" content="The most searched AI questions answered in plain English. ChatGPT, Claude, Gemini, Voice AI, agents, automation, governance and the academy — all covered."/>
+<link rel="canonical" href="https://www.aiacademyforbeginners.com/faqs/"/>
+<meta property="og:title" content="FAQs | AI Academy for Beginners"/>
+<meta property="og:description" content="30+ AI questions answered with zero jargon. ChatGPT, Claude, Gemini, Voice Agents, AI automation, AI governance and more."/>
+<meta property="og:url" content="https://www.aiacademyforbeginners.com/faqs/"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is artificial intelligence?","acceptedAnswer":{"@type":"Answer","text":"Artificial intelligence is software that learns from patterns in data to make decisions, generate content, understand language, and solve problems without step-by-step programming. In 2026, AI means tools you talk to in plain English that write, analyse, automate, and create on your behalf."}},{"@type":"Question","name":"What is ChatGPT?","acceptedAnswer":{"@type":"Answer","text":"ChatGPT is an AI assistant by OpenAI that can write content, answer questions, analyse documents, generate images, browse the web, and build Custom GPTs. You interact with it entirely in plain English."}},{"@type":"Question","name":"What is Claude AI?","acceptedAnswer":{"@type":"Answer","text":"Claude is an AI assistant built by Anthropic, known for handling extremely long documents, nuanced writing quality, and careful step-by-step reasoning."}},{"@type":"Question","name":"What is Google Gemini?","acceptedAnswer":{"@type":"Answer","text":"Google Gemini is Google's family of multimodal AI models, integrated natively into Gmail, Google Docs, Sheets, Slides, and Drive."}},{"@type":"Question","name":"What is a Voice AI Agent?","acceptedAnswer":{"@type":"Answer","text":"A Voice AI Agent makes and receives real phone calls and holds natural, conversational dialogues — answering questions, booking appointments, qualifying leads, and handling customer service 24/7."}},{"@type":"Question","name":"Do I need coding skills to use AI?","acceptedAnswer":{"@type":"Answer","text":"None whatsoever. Every tool covered in the academy operates through plain English. If you can write an email, you have every skill required to complete all 7 modules."}}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --bg:#050810;--surface:rgba(255,255,255,0.04);--surface2:rgba(255,255,255,0.07);
+  --border:rgba(255,255,255,0.08);--border-bright:rgba(255,255,255,0.15);
+  --accent:#7c3aed;--accent-light:#a78bfa;--accent2:#06b6d4;--accent3:#10b981;--gold:#f59e0b;
+  --text:#f1f5f9;--text-secondary:#94a3b8;--text-muted:#64748b;
+  --font:'Plus Jakarta Sans',sans-serif;--radius:20px;--radius-sm:14px;
+  /* category colours */
+  --c1:#7c3aed;--c1-bg:rgba(124,58,237,.12);--c1-border:rgba(124,58,237,.3);
+  --c2:#06b6d4;--c2-bg:rgba(6,182,212,.1);--c2-border:rgba(6,182,212,.3);
+  --c3:#10b981;--c3-bg:rgba(16,185,129,.1);--c3-border:rgba(16,185,129,.3);
+  --c4:#f59e0b;--c4-bg:rgba(245,158,11,.1);--c4-border:rgba(245,158,11,.3);
+  --c5:#ec4899;--c5-bg:rgba(236,72,153,.1);--c5-border:rgba(236,72,153,.3);
+  --c6:#a78bfa;--c6-bg:rgba(167,139,250,.1);--c6-border:rgba(167,139,250,.3);
+  --c7:#34d399;--c7-bg:rgba(52,211,153,.1);--c7-border:rgba(52,211,153,.3);
+  --c8:#fb923c;--c8-bg:rgba(251,146,60,.1);--c8-border:rgba(251,146,60,.3);
+  --c9:#60a5fa;--c9-bg:rgba(96,165,250,.1);--c9-border:rgba(96,165,250,.3);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:var(--font);min-height:100vh;overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;
+  background:radial-gradient(ellipse 80% 60% at 15% -5%,rgba(124,58,237,.18) 0%,transparent 60%),
+  radial-gradient(ellipse 50% 40% at 85% 100%,rgba(6,182,212,.1) 0%,transparent 60%);
+  pointer-events:none;z-index:0}
+.container{max-width:1000px;margin:0 auto;padding:0 24px;position:relative;z-index:1}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 32px;height:68px;background:rgba(5,8,16,0.88);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+.nav-logo{font-weight:900;font-size:1.1rem;color:var(--text);text-decoration:none;letter-spacing:-.5px}
+.nav-logo span{color:var(--accent-light)}
+.nav-links{list-style:none;display:flex;align-items:center;gap:6px}
+.nav-links a{color:var(--text-secondary);text-decoration:none;font-size:14px;font-weight:500;padding:7px 12px;border-radius:8px;transition:all .2s}
+.nav-links a:hover,.nav-links a.active{color:var(--text);background:var(--surface2)}
+.nav-cta{background:linear-gradient(135deg,var(--accent),#5b21b6);color:#fff;padding:9px 20px;border-radius:50px;font-weight:700;font-size:14px;text-decoration:none;white-space:nowrap}
+.hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:6px}
+.hamburger span{display:block;width:22px;height:2px;background:var(--text);border-radius:2px}
+@media(max-width:860px){.nav-links{display:none}.hamburger{display:flex}}
+
+/* MOBILE MENU */
+.mobile-menu{position:fixed;inset:0;background:rgba(5,8,16,.97);z-index:200;display:flex;flex-direction:column;align-items:flex-start;padding:32px 28px;gap:6px;transform:translateX(100%);transition:transform .35s cubic-bezier(.4,0,.2,1);overflow-y:auto}
+.mobile-menu.open{transform:translateX(0)}
+.mobile-menu a{color:var(--text-secondary);text-decoration:none;font-size:17px;font-weight:600;padding:12px 4px;border-bottom:1px solid var(--border);width:100%}
+.mobile-close{background:none;border:1px solid var(--border);color:var(--text);padding:8px 14px;border-radius:8px;cursor:pointer;font-size:16px;margin-bottom:16px;align-self:flex-end}
+
+/* URGENCY */
+.urgency-bar{background:linear-gradient(90deg,rgba(124,58,237,.3),rgba(6,182,212,.2));border-bottom:1px solid rgba(124,58,237,.3);padding:10px 20px;text-align:center;font-size:13px;font-weight:600;color:var(--text-secondary)}
+.urgency-bar a{color:var(--accent-light);text-decoration:none;font-weight:700}
+
+/* HERO */
+.page-hero{padding:80px 24px 56px;text-align:center;position:relative}
+.page-hero::before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);width:800px;height:400px;background:radial-gradient(ellipse,rgba(124,58,237,.15) 0%,transparent 70%);pointer-events:none}
+.section-label{display:inline-block;background:rgba(124,58,237,.15);border:1px solid rgba(124,58,237,.3);color:var(--accent-light);font-size:12px;font-weight:700;padding:5px 14px;border-radius:20px;letter-spacing:.5px;margin-bottom:16px}
+.gradient-text{background:linear-gradient(135deg,var(--accent-light),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.page-title{font-size:clamp(2rem,5vw,3.4rem);font-weight:900;letter-spacing:-2px;line-height:1.08;margin-bottom:16px}
+.page-sub{color:var(--text-secondary);font-size:1rem;max-width:580px;margin:0 auto 28px;line-height:1.85}
+
+/* SEARCH BAR */
+.search-wrap{max-width:560px;margin:0 auto 16px;position:relative}
+.search-wrap input{width:100%;padding:16px 20px 16px 48px;background:var(--surface);border:1px solid var(--border);border-radius:50px;color:var(--text);font-family:var(--font);font-size:15px;outline:none;transition:border-color .2s}
+.search-wrap input:focus{border-color:rgba(124,58,237,.5);background:rgba(124,58,237,.05)}
+.search-wrap input::placeholder{color:var(--text-muted)}
+.search-icon{position:absolute;left:18px;top:50%;transform:translateY(-50%);color:var(--text-muted);font-size:17px;pointer-events:none}
+.search-count{font-size:12px;color:var(--text-muted);text-align:center;margin-bottom:8px;min-height:18px}
+
+/* CATEGORY NAV */
+.cat-nav{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-bottom:52px}
+.cat-btn{border:1px solid var(--border);background:var(--surface);color:var(--text-secondary);padding:8px 16px;border-radius:50px;font-size:12.5px;font-weight:600;cursor:pointer;transition:all .2s;font-family:var(--font)}
+.cat-btn:hover{color:var(--text);border-color:var(--border-bright)}
+.cat-btn.active{color:#fff;border-color:transparent}
+
+/* FAQ LAYOUT */
+.faq-layout{display:grid;grid-template-columns:220px 1fr;gap:40px;align-items:start}
+@media(max-width:760px){.faq-layout{grid-template-columns:1fr}}
+
+/* SIDEBAR */
+.faq-sidebar{position:sticky;top:88px;display:flex;flex-direction:column;gap:4px}
+@media(max-width:760px){.faq-sidebar{display:none}}
+.sidebar-link{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:10px;text-decoration:none;font-size:13px;font-weight:600;color:var(--text-muted);transition:all .2s;border:1px solid transparent}
+.sidebar-link:hover{color:var(--text);background:var(--surface);border-color:var(--border)}
+.sidebar-link.active-section{color:var(--text);background:var(--surface);border-color:var(--border-bright)}
+.sidebar-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+
+/* FAQ SECTIONS */
+.faq-main{}
+.faq-section{margin-bottom:52px;scroll-margin-top:90px}
+.faq-section-header{display:flex;align-items:center;gap:12px;margin-bottom:20px;padding-bottom:14px;border-bottom:2px solid}
+.faq-section-icon{font-size:1.4rem;width:42px;height:42px;border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.faq-section-title{font-size:1.15rem;font-weight:800;letter-spacing:-.3px}
+.faq-section-count{font-size:11px;font-weight:700;padding:3px 9px;border-radius:20px;margin-left:auto;flex-shrink:0}
+
+/* FAQ ITEM */
+.faq-item{border-radius:var(--radius-sm);overflow:hidden;margin-bottom:8px;transition:all .2s;border:1px solid var(--border)}
+.faq-item:hover{border-color:var(--border-bright)}
+.faq-item.hidden{display:none}
+.faq-q{width:100%;background:var(--surface);border:none;padding:18px 22px;text-align:left;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:14px;color:var(--text);font-family:var(--font);font-size:14.5px;font-weight:600;line-height:1.4;transition:background .2s}
+.faq-q:hover{background:var(--surface2)}
+.faq-item.open .faq-q{background:var(--surface2)}
+.faq-icon{flex-shrink:0;width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:700;transition:transform .3s,background .3s;background:rgba(124,58,237,.15);color:var(--accent-light)}
+.faq-item.open .faq-icon{transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .38s ease}
+.faq-a-inner{padding:0 22px 18px;font-size:14px;color:var(--text-secondary);line-height:1.85;background:var(--surface)}
+
+/* NO RESULTS */
+.no-results{text-align:center;padding:60px 24px;color:var(--text-muted);display:none}
+.no-results h3{font-size:1.1rem;font-weight:700;margin-bottom:8px;color:var(--text-secondary)}
+
+/* CTA STRIP */
+.cta-strip{background:linear-gradient(135deg,rgba(124,58,237,.18),rgba(6,182,212,.1));border:1px solid rgba(124,58,237,.3);border-radius:24px;padding:48px 40px;text-align:center;margin:64px 0 80px;position:relative;overflow:hidden}
+.cta-strip::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 80% at 50% 50%,rgba(124,58,237,.1) 0%,transparent 70%);pointer-events:none}
+.cta-strip h2{font-size:clamp(1.4rem,3.5vw,2.2rem);font-weight:900;letter-spacing:-1px;margin-bottom:10px;position:relative}
+.cta-strip p{color:var(--text-secondary);margin-bottom:28px;font-size:0.95rem;max-width:480px;margin-left:auto;margin-right:auto;position:relative;line-height:1.8}
+.cta-group{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;position:relative}
+.btn-primary{background:linear-gradient(135deg,var(--accent),#5b21b6);color:#fff;padding:14px 30px;border-radius:50px;font-weight:700;font-size:14px;text-decoration:none;display:inline-block;transition:opacity .2s}
+.btn-primary:hover{opacity:.88}
+.btn-secondary{background:transparent;color:var(--text-secondary);border:1px solid var(--border);padding:14px 24px;border-radius:50px;font-weight:600;font-size:14px;text-decoration:none;display:inline-block;transition:all .2s}
+.btn-secondary:hover{border-color:var(--accent-light);color:var(--text)}
+
+/* FOOTER */
+.simple-footer{border-top:1px solid var(--border);padding:32px 24px;text-align:center}
+.simple-footer p{color:var(--text-muted);font-size:13px;margin-bottom:12px}
+.footer-nav{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;list-style:none;margin-bottom:16px}
+.footer-nav a{color:var(--text-muted);text-decoration:none;font-size:13px;transition:color .2s}
+.footer-nav a:hover{color:var(--accent-light)}
+
+/* FADE */
+.fade-in{opacity:0;transform:translateY(16px);transition:opacity .5s ease,transform .5s ease}
+.fade-in.visible{opacity:1;transform:translateY(0)}
+
+/* DIVIDER */
+.divider{height:1px;background:linear-gradient(90deg,transparent,var(--border-bright),transparent);margin:8px 0}
+</style>
+</head>
+<body>
+
+<div class="urgency-bar">🔥 50,000+ learners — <a href="https://www.howtogeneratenewbusiness.com/revenue-1st-ai-community">Join AI Academy from £397/month →</a></div>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" onclick="closeMobileMenu()">✕</button>
+  <a href="https://www.aiacademyforbeginners.com/">🏠 Home</a>
+  <a href="https://www.aiacademyforbeginners.com/join-revenue-1st-community/">💰 Revenue 1st Community</a>
+  <a href="https://www.aiacademyforbeginners.com/7-inspiring-secrets-from-sam-onigbanjo-gtm-architects/">👤 About Sam</a>
+  <a href="https://www.aiacademyforbeginners.com/ai-for-accountants/">📊 AI for Accountants</a>
+  <a href="https://www.aiacademyforbeginners.com/ai-in-marketing/">📣 AI in Marketing</a>
+  <a href="https://www.aiacademyforbeginners.com/a-i-for-your-business-success/">🚀 AI for Business</a>
+  <a href="https://www.aiacademyforbeginners.com/plans/">📋 Plans</a>
+  <a href="https://www.aiacademyforbeginners.com/faqs/" style="color:var(--accent-light)">❓ FAQs</a>
+  <a href="https://www.aiacademyforbeginners.com/contact-us/">📩 Contact</a>
+  <a href="https://www.howtogeneratenewbusiness.com/revenue-1st-ai-community" style="color:var(--accent-light);font-weight:800">⚡ Enrol Now</a>
+</div>
+
+<nav>
+  <a href="https://www.aiacademyforbeginners.com/" class="nav-logo">AI Academy <span>for Beginners</span></a>
+  <ul class="nav-links">
+    <li><a href="https://www.aiacademyforbeginners.com/">Home</a></li>
+    <li><a href="https://www.aiacademyforbeginners.com/join-revenue-1st-community/">Community</a></li>
+    <li><a href="https://www.aiacademyforbeginners.com/ai_blogs/">Blog</a></li>
+    <li><a href="https://www.aiacademyforbeginners.com/plans/">Plans</a></li>
+    <li><a href="https://www.aiacademyforbeginners.com/faqs/" class="active">FAQs</a></li>
+    <li><a href="https://www.aiacademyforbeginners.com/contact-us/">Contact</a></li>
+  </ul>
+  <a href="https://www.howtogeneratenewbusiness.com/revenue-1st-ai-community" class="nav-cta">Enrol Now →</a>
+  <button class="hamburger" onclick="openMobileMenu()"><span></span><span></span><span></span></button>
+</nav>
+
+<main>
+
+<div class="page-hero">
+  <span class="section-label">Frequently Asked Questions</span>
+  <h1 class="page-title">Every AI question.<br/><span class="gradient-text">Zero jargon.</span></h1>
+  <p class="page-sub">The most searched AI questions across the web — answered in plain English by the team that has taught over 50,000 professionals how to use AI in their businesses and careers.</p>
+  <div class="search-wrap">
+    <span class="search-icon">🔍</span>
+    <input type="text" id="faqSearch" placeholder="Search any AI question…" oninput="searchFAQs(this.value)" autocomplete="off"/>
+  </div>
+  <div class="search-count" id="searchCount"></div>
+  <div class="cat-nav" id="catNav">
+    <button class="cat-btn active" onclick="filterCat('all',this)" style="background:linear-gradient(135deg,var(--accent),#5b21b6);color:#fff;border-color:transparent">All Questions</button>
+    <button class="cat-btn" onclick="filterCat('fundamentals',this)" style="--hover:var(--c1)">🤖 AI Fundamentals</button>
+    <button class="cat-btn" onclick="filterCat('chatgpt',this)">💬 ChatGPT</button>
+    <button class="cat-btn" onclick="filterCat('claude',this)">🧠 Claude AI</button>
+    <button class="cat-btn" onclick="filterCat('gemini',this)">✨ Gemini</button>
+    <button class="cat-btn" onclick="filterCat('agents',this)">🤖 AI Agents</button>
+    <button class="cat-btn" onclick="filterCat('voice',this)">🎙️ Voice AI</button>
+    <button class="cat-btn" onclick="filterCat('governance',this)">🏛️ Governance</button>
+    <button class="cat-btn" onclick="filterCat('marketing',this)">📣 AI Marketing</button>
+    <button class="cat-btn" onclick="filterCat('academy',this)">🎓 The Academy</button>
+  </div>
+</div>
+
+<div class="container">
+<div class="faq-layout">
+
+<!-- SIDEBAR -->
+<aside class="faq-sidebar">
+  <a href="#fundamentals" class="sidebar-link active-section" data-section="fundamentals"><span class="sidebar-dot" style="background:var(--c1)"></span>AI Fundamentals</a>
+  <a href="#chatgpt" class="sidebar-link" data-section="chatgpt"><span class="sidebar-dot" style="background:var(--c2)"></span>ChatGPT</a>
+  <a href="#claude" class="sidebar-link" data-section="claude"><span class="sidebar-dot" style="background:var(--c3)"></span>Claude AI</a>
+  <a href="#gemini" class="sidebar-link" data-section="gemini"><span class="sidebar-dot" style="background:var(--c4)"></span>Google Gemini</a>
+  <a href="#agents" class="sidebar-link" data-section="agents"><span class="sidebar-dot" style="background:var(--c5)"></span>AI Agents</a>
+  <a href="#voice" class="sidebar-link" data-section="voice"><span class="sidebar-dot" style="background:var(--c6)"></span>Voice AI</a>
+  <a href="#governance" class="sidebar-link" data-section="governance"><span class="sidebar-dot" style="background:var(--c7)"></span>Governance</a>
+  <a href="#marketing" class="sidebar-link" data-section="marketing"><span class="sidebar-dot" style="background:var(--c8)"></span>AI Marketing</a>
+  <a href="#academy" class="sidebar-link" data-section="academy"><span class="sidebar-dot" style="background:var(--c9)"></span>The Academy</a>
+</aside>
+
+<!-- MAIN FAQ CONTENT -->
+<div class="faq-main">
+<div class="no-results" id="noResults">
+  <h3>No matching questions found</h3>
+  <p>Try a different keyword, or browse by category above.</p>
+</div>
+
+
+<!-- ===== SECTION 1: AI FUNDAMENTALS ===== -->
+<div class="faq-section fade-in" id="fundamentals" data-cat="fundamentals">
+  <div class="faq-section-header" style="border-color:var(--c1);color:var(--c1)">
+    <div class="faq-section-icon" style="background:var(--c1-bg);border:1px solid var(--c1-border)">🤖</div>
+    <span class="faq-section-title">AI Fundamentals</span>
+    <span class="faq-section-count" style="background:var(--c1-bg);color:var(--c1);border:1px solid var(--c1-border)">6 questions</span>
+  </div>
+
+  <div class="faq-item" data-cat="fundamentals" data-q="what is artificial intelligence ai">
+    <button class="faq-q" onclick="toggleFAQ(this)">What is artificial intelligence (AI)?<span class="faq-icon">+</span></button>
+    <div class="faq-a"><div class="faq-a-inner" style="border-left:3px solid var(--c1)">Artificial intelligence is software that learns from patterns in data to make decisions, generate content, understand language, and solve problems — without needing explicit step-by-step programming for every task. In 2026, AI means tools you talk to in plain English that write, analyse, automate, and create on your behalf.</div></div>
+  </div>
+
+  <div class="faq-item" data-cat="fundamentals" data-q="what is generative ai">
+    <button class="faq-q" onclick="toggleFAQ(this)">What is generative AI?<span class="faq-icon">+</span></button>
+    <div class="faq-a"><div class="faq-a-inner" style="border-left:3px solid var(--c1)">Generative AI creates new content — text, images, audio, video, code — from a prompt. Tools like ChatGPT, Claude, Gemini, Midjourney, and ElevenLabs are all generative AI. They don't just retrieve information; they produce original outputs based on your instructions.</div></div>
+  </div>
+
+  <div class="faq-item" data-cat="fundamentals" data-q="what is a large language model llm">
+    <button class="faq-q" onclick="toggleFAQ(this)">What is a large language model (LLM)?<span class="faq-icon">+</span></button>
+    <div class="faq-a"><div class="faq-a-inner" style="border-left:3px solid var(--c1)">A large language model is the engine behind AI chatbots like ChatGPT and Claude. It's trained on vast amounts of text and learns statistical patterns in language — allowing it to predict and generate coherent, context-aware text in response to any prompt.</div></div>
+  </div>
+
+  <div class="faq-item" data-cat="fundamentals" data-q="difference between ai machine learning deep learning">
+    <button class="faq-q" onclick="toggleFAQ(this)">What is the difference between AI, machine learning, and deep learning?<span class="faq-icon">+</span></button>
+    <div class="faq-a"><div class="faq-a-inner" style="border-left:3px solid var(--c1)">AI is the broad field of making machines intelligent. Machine learning is a subset where models learn from data. Deep learning is a subset of machine learning using neural networks with many layers — it powers most modern AI including ChatGPT, image generators, and Voice AI. Think of them as nested circles: AI contains ML, which contains deep learning.</div></div>
+  </div>
+
+  <div class="faq-item" data-cat="fundamentals" data-q="will ai take my job replace work">
+    <button class="faq-q" onclick="toggleFAQ(this)">Will AI take my job?<span class="faq-icon">+</span></button>
+    <div class="faq-a"><div class="faq-a-inner" style="border-left:3px solid var(--c1)">AI will not take your job. A person who knows how to use AI effectively will. The professionals thriving in 2026 are those who treat AI as a 10x productivity multiplier — not those who ignore it. The greatest career risk right now is not learning AI at all. This academy exists precisely to close that gap.</div></div>
+  </div>
+
+  <div class="faq-item" data-cat="fundamentals" data-q="how do i start learning ai complete beginner">
+    <button class="faq-q" onclick="toggleFAQ(this)">How do I start learning AI as a complete beginner?<span class="faq-icon">+</span></button>
+    <div class="faq-a"><div class="faq-a-inner" style="border-left:3px solid var(--c1)">Start with the three tools you will use every day: ChatGPT for quick tasks and content, Claude for deep analysis and long documents, and Gemini for Google Workspace integration. Then layer in automation, Voice AI, and building. That is exactly the progression inside this academy — beginning with Module 01 and building systematically from there.</div></div>
+  </div>
+</div>
+
+<!-- ===== SECTION 2: CHATGPT ===== -->
+<div class="faq-section fade-in" id="chatgpt" data-cat="chatgpt">
+  <div class="faq-section-header" style="border-color:var(--c2);color:var(--c2)">
+    <div class="faq-section-icon" style="background:var(--c2-bg);border:1px solid var(--c2-border)">💬</div>
+    <span class="faq-section-title">ChatGPT</span>
+    <span class="faq-section-count" style="background:var(--c2-bg);color:var(--c2);border:1px solid var(--c2-border)">6 questions</span>
+  </div>
+
+  <div class="faq-item" data-cat="chatgpt" data-q="what is chatgpt used for">
+    <button class="faq-q" onclick="toggleFAQ(this)">What is ChatGPT?<span class="faq-icon">+</span></button>
+    <div class="faq-a"><div class="faq-a-inner" style="border-left:3px solid var(--c2)">ChatGPT is an AI assistant by OpenAI that can write content, answer questions, analyse documents, generate images, browse the web, run code, and build Custom GPTs. You interact with it entirely in plain English — no technical skills required. It is the most widely used AI tool in the world.</div></div>
+  </div>
+
+  <div class="faq-item" data-cat="chatgpt" data-q="chatgpt business uses marketing writing">
+    <button class="faq-q" onclick="toggleFAQ(this)">What is ChatGPT used for in business?<span class="faq-icon">+</span></button>
+    <div class="faq-a"><div class="faq-a-inner" style="border-left:3px solid var(--c2)">ChatGPT is used for writing emails, blog posts, social media and marketing copy; summarising documents and research; answering customer queries; generating business plans; coding and debugging; image creation; data analysis; and building AI-powered products. In business, it functions as a research analyst, copywriter, customer service agent, and strategist in one tool.</div></div>
+  </div>
+
+  <div class="faq-item" data-cat="chatgpt" data-q="is chatgpt free cost price">
+    <button class="faq-q" onclick="toggleFAQ(this)">Is ChatGPT free?<span class="faq-icon">+</span></button>
+    <div class="faq-a"><div class="faq-a-inner" style="border-left:3px solid var(--c2)">Yes — ChatGPT has a free tier giving access to GPT-4o mini. The paid tier (ChatGPT Plus) at approximately £20/month unlocks GPT-4o with advanced capabilities: real-time web browsing, image generation via DALL-E, file uploads, voice mode, and access to Custom GPTs. For business use the paid tier is recommended and delivers exceptional ROI.</div></div>
+  </div>
+
+  <div class="faq-item" data-cat="chatgpt" data-q="what is a custom gpt build">
+    <button class="faq-q" onclick="toggleFAQ(this)">What is a Custom GPT and how do I build one?<span class="faq-icon">+</span></button>
+    <div class="faq-a"><div class="faq-a-inner" style="border-left:3px solid var(--c2)">A Custom GPT is a version of ChatGPT you personalise with your own instructions, knowledge base, and personality — no coding required. You can build a Custom GPT that knows your business, speaks in your brand voice, and handles specific tasks automatically. Module 07 of the academy teaches this step by step.</div></div>
+  </div>
+
+  <div class="faq-item" data-cat="chatgpt" data-q="what is prompt engineering">
+    <button class="faq-q" onclick="toggleFAQ(this)">What is prompt engineering?<span class="faq-icon">+</span></button>
+    <div class="faq-a"><div class="faq-a-inner" style="border-left:3px solid var(--c2)">Prompt engineering is the skill of writing instructions to AI that produce high-quality, accurate, useful outputs. The same AI tool gives drastically different results depending on how you phrase your request. A well-engineered prompt specifies the role, task, format, tone, constraints, and context. This single skill multiplies the value of every AI tool you use — covered in depth in Module 01.</div></div>
+  </div>
+
+  <div class="faq-item" data-cat="chatgpt" data-q="what is gpt-4o gpt4 omni">
+    <button class="faq-q" onclick="toggleFAQ(this)">What is GPT-4o?<span class="faq-icon">+</span></button>
+    <div class="faq-a"><div class="faq-a-inner" style="border-left:3px solid var(--c2)">GPT-4o (the "o" stands for omni) is OpenAI's flagship model. It processes text, images, audio, and documents in a single session and responds significantly faster than previous versions. It is the model behind ChatGPT Plus and remains one of the most capable general-purpose AI models available in 2026.</div></div>
+  </div>
+</div>
+
+<!-- ===== SECTION 3: CLAUDE ===== -->
+<div class="faq-section fade-in" id="claude" data-cat="claude">
+  <div class="faq-section-header" style="border-color:var(--c3);color:var(--c3)">
+    <div class="faq-section-icon" style="background:var(--c3-bg);border:1px solid var(--c3-border)">🧠</div>
+    <span class="faq-section-title">Claude AI</span>
+    <span class="faq-section-count" style="background:var(--c3-bg);color:var(--c3);border:1px solid var(--c3-border)">5 questions</span>
+  </div>
+
+  <div class="faq-item" data-cat="claude" data-q="what is claude ai anthropic">
+    <button class="faq-q" onclick="toggleFAQ(this)">What is Claude AI?<span class="faq-icon">+</span></button>
+    <div class="faq-a"><div class="faq-a-inner" style="border-left:3px solid var(--c3)">Claude is an AI assistant built by Anthropic. It is known for its ability to handle extremely long documents (up to 200,000 tokens in a single context), its natural and nuanced writing quality, and its careful step-by-step reasoning. It is widely considered the best AI for analysis, long-form writing, and sensitive communications.</div></div>
+  </div>
+
+  <div class="faq-item" data-cat="claude" data-q="how is claude different from chatgpt vs compare">
+    <button class="faq-q" onclick="toggleFAQ(this)">How is Claude different from ChatGPT?<span class="faq-icon">+</span></button>
+    <div class="faq-a"><div class="faq-a-inner" style="border-left:3px solid var(--c3)">Claude excels at long documents, nuanced reasoning, and human-sounding writing. ChatGPT is faster for quick tasks, has better image generation, and a larger ecosystem of Custom GPTs. Claude is safer and less prone to hallucination on analytical tasks. Both are covered in the academy and you will learn exactly when to deploy each one.</div></div>
+  </div>
+
+  <div class="faq-item" data-cat="claude" data-q="is claude ai free cost price pro">
+    <button class="faq-q" onclick="toggleFAQ(this)">Is Claude AI free?<span class="faq-icon">+</span></button>
+    <div class="faq-a"><div class="faq-a-inner" style="border-left:3px solid var(--c3)">Yes — Claude has a free tier. The Claude Pro plan at approximately £20/month unlocks the most capable models, longer context windows, priority access, and more messages per day. The free tier is sufficient for getting started; Pro is recommended for heavy business use.</div></div>
+  </div>
+
+  <div class="faq-item" data-cat="claude" data-q="what is claude best used for business">
+    <button class="faq-q" onclick="toggleFAQ(this)">What is Claude best used for?<span class="faq-icon">+</span></button>
+    <div class="faq-a"><div class="faq-a-inner" style="border-left:3px solid var(--c3)">Claude is best for: summarising and analysing long contracts, reports, and research papers; writing long-form proposals, pitches, and articles that read as naturally human; handling nuanced or sensitive communications; and complex multi-step reasoning tasks where accuracy and careful thinking matter more than speed.</div></div>
+  </div>
+
+  <div class="faq-item" data-cat="claude" data-q="who created claude anthropic constitutional ai">
+    <button class="faq-q" onclick="toggleFAQ(this)">Who created Claude AI?<span class="faq-icon">+</span></button>
+    <div class="faq-a"><div class="faq-a-inner" style="border-left:3px solid var(--c3)">Claude was created by Anthropic, an AI safety company founded in 2021 by former OpenAI researchers including Dario Amodei and Daniela Amodei. Anthropic's focus on AI safety is reflected in Claude's measured, careful approach. Claude is built on what Anthropic calls Constitutional AI — a framework for making AI models more honest and harmless.</div></div>
+  </div>
+</div>
+
+<!-- ===== SECTION 4: GEMINI ===== -->
+<div class="faq-section fade-in" id="gemini" data-cat="gemini">
+  <div class="faq-section-header" style="border-color:var(--c4);color:var(--c4)">
+    <div class="faq-section-icon" style="background:var(--c4-bg);border:1px solid var(--c4-border)">✨</div>
+    <span class="faq-section-title">Google Gemini</span>
+    <span class="faq-section-count" style="background:var(--c4-bg);color:var(--c4);border:1px solid var(--c4-border)">4 questions</span>
+  </div>
+
+  <div class="faq-item" data-cat="gemini" data-q="what is google gemini">
+    <button class="faq-q" onclick="toggleFAQ(this)">What is Google Gemini?<span class="faq-icon">+</span></button>
+    <div class="faq-a"><div class="faq-a-inner" style="border-left:3px solid var(--c4)">Google Gemini is Google's family of multimodal AI models. It understands and generates text, images, audio, video, and code simultaneously. Gemini is integrated natively into Gmail, Google Docs, Sheets, Slides, and Drive — making it the most practical AI tool for people already working inside Google Workspace.</div></div>
+  </div>
+
+  <div class="faq-item" data-cat="gemini" data-q="what is gemini best used for business google workspace">
+    <button class="faq-q" onclick="toggleFAQ(this)">What is Gemini best used for?<span class="faq-icon">+</span></button>
+    <div class="faq-a"><div class="faq-a-inner" style="border-left:3px solid var(--c4)">Gemini excels at Google Workspace tasks (drafting Gmail, summarising Google Docs, building Sheets formulas), real-time web search and research, multimodal analysis (combining text, images, and video in one query), and tasks where current, live information matters. Its integration with Google Search gives it the strongest real-time knowledge of any major AI model.</div></div>
+  </div>
+
+  <div class="faq-item" data-cat="gemini" data-q="is google gemini free cost price">
+    <button class="faq-q" onclick="toggleFAQ(this)">Is Google Gemini free?<span class="faq-icon">+</span></button>
+    <div class="faq-a"><div class="faq-a-inner" style="border-left:3px solid var(--c4)">Yes — Gemini has a free tier at gemini.google.com. Gemini Advanced (included in Google One AI Premium at approximately £19/month) gives access to the most capable models and deeper Workspace integrations. For Google Workspace Business users, Gemini is available as an add-on that brings AI directly into your professional tools.</div></div>
+  </div>
+
+  <div class="faq-item" data-cat="gemini" data-q="difference between gemini chatgpt claude compare">
+    <button class="faq-q" onclick="toggleFAQ(this)">What is the difference between Gemini, ChatGPT, and Claude?<span class="faq-icon">+</span></button>
+    <div class="faq-a"><div class="faq-a-inner" style="border-left:3px solid var(--c4)">Choose Gemini when you live in Google Workspace and need real-time information. Choose ChatGPT when you need image generation, Custom GPTs, or a broad plugin ecosystem. Choose Claude when you need to process long documents, write human-quality long-form content, or handle nuanced analytical tasks. The academy teaches you to use all three as a complementary stack — not as competitors.</div></div>
+  </div>
+</div>
+
+
+<!-- ===== SECTION 5: AI AGENTS & AUTOMATION ===== -->
+<div class="faq-section fade-in" id="agents" data-cat="agents">
+  <div class="faq-section-header" style="border-color:var(--c5);color:var(--c5)">
+    <div class="faq-section-icon" style="background:var(--c5-bg);border:1px solid var(--c5-border)">⚙️</div>
+    <span class="faq-section-title">AI Agents &amp; Automation</span>
+    <span class="faq-section-count" style="background:var(--c5-bg);color:var(--c5);border:1px solid var(--c5-border)">5 questions</span>
+  </div>
+
+  <div class="faq-item" data-cat="agents" data-q="what is an ai agent autonomous">
+    <button class="faq-q" onclick="toggleFAQ(this)">What is an AI agent?<span class="faq-icon">+</span></button>
+    <div class="faq-a"><div class="faq-a-inner" style="border-left:3px solid var(--c5)">An AI agent is an AI system that can plan, decide, and take multi-step actions autonomously to complete a goal — without a human confirming every step. Unlike a chatbot that responds to one question at a time, an agent can research a topic, write a report, format it, and send it — all in sequence, without interruption. Module 07 covers building and deploying AI agents.</div></div>
+  </div>
+
+  <div class="faq-item" data-cat="agents" data-q="what is agentic ai agentic">
+    <button class="faq-q" onclick="toggleFAQ(this)">What is agentic AI?<span class="faq-icon">+</span></button>
+    <div class="faq-a"><div class="faq-a-inner" style="border-left:3px solid var(--c5)">Agentic AI refers to AI systems that operate with autonomy — they receive a high-level goal and independently determine the steps, tools, and decisions needed to achieve it. This is the frontier of AI in 2026. Rather than answering a single question, agentic AI manages entire workflows, makes decisions, and executes complex multi-step tasks end to end.</div></div>
+  </div>
+
+  <div class="faq-item" data-cat="agents" data-q="what is ai automation workflow make zapier n8n">
+    <button class="faq-q" onclick="toggleFAQ(this)">What is AI automation?<span class="faq-icon">+</span></button>
+    <div class="faq-a"><div class="faq-a-inner" style="border-left:3px solid var(--c5)">AI automation connects AI models to your existing tools and data, creating workflows that run without manual input. For example: a new lead fills in a form → AI qualifies them → personalised email is drafted and sent → CRM is updated → follow-up is scheduled. All of this happens with zero human involvement. Tools like Make, Zapier, and n8n power these workflows and are covered in Module 04.</div></div>
+  </div>
+
+  <div class="faq-item" data-cat="agents" data-q="what is a flow agent pipeline">
+    <button class="faq-q" onclick="toggleFAQ(this)">What is a flow agent?<span class="faq-icon">+</span></button>
+    <div class="faq-a"><div class="faq-a-inner" style="border-left:3px solid var(--c5)">A flow agent is an AI agent that operates within a defined workflow or pipeline — executing a series of connected steps in sequence or in parallel to complete a business process. Flow agents are used for sales pipelines, content production workflows, data processing, and customer service escalation paths. Module 07 teaches you to build and deploy flow agents from scratch.</div></div>
+  </div>
+
+  <div class="faq-item" data-cat="agents" data-q="what is a voice ai agent phone calls">
+    <button class="faq-q" onclick="toggleFAQ(this)">What is a Voice AI Agent?<span class="faq-icon">+</span></button>
+    <div class="faq-a"><div class="faq-a-inner" style="border-left:3px solid var(--c5)">A Voice AI Agent makes and receives real phone calls and holds natural, conversational dialogues — answering questions, booking appointments, qualifying leads, and handling customer service. It sounds human, never sleeps, and can handle hundreds of simultaneous calls. Tools like VAPI, Bland AI, and Retell AI make this possible without deep technical knowledge.</div></div>
+  </div>
+</div>
+
+<!-- ===== SECTION 6: VOICE AI & AVATARS ===== -->
+<div class="faq-section fade-in" id="voice" data-cat="voice">
+  <div class="faq-section-header" style="border-color:var(--c6);color:var(--c6)">
+    <div class="faq-section-icon" style="background:var(--c6-bg);border:1px solid var(--c6-border)">🎙️</div>
+    <span class="faq-section-title">Voice AI &amp; Avatars</span>
+    <span class="faq-section-count" style="background:var(--c6-bg);color:var(--c6);border:1px solid var(--c6-border)">4 questions</span>
+  </div>
+
+  <div class="faq-item" data-cat="voice" data-q="what is elevenlabs voice ai clone">
+    <button class="faq-q" onclick="toggleFAQ(this)">What is ElevenLabs?<span class="faq-icon">+</span></button>
+    <div class="faq-a"><div class="faq-a-inner" style="border-left:3px solid var(--c6)">ElevenLabs is the world's leading AI voice platform. It clones human voices with extraordinary accuracy from as little as one minute of audio, generates multilingual voiceovers, and powers real-time Voice AI Agents. Businesses use it to create branded AI voices, narrate content, and deploy phone agents — all without a recording studio or voice talent.</div></div>
+  </div>
+
+  <div class="faq-item" data-cat="voice" data-q="what is heygen ai video avatar">
+    <button class="faq-q" onclick="toggleFAQ(this)">What is HeyGen?<span class="faq-icon">+</span></button>
+    <div class="faq-a"><div class="faq-a-inner" style="border-left:3px solid var(--c6)">HeyGen is an AI video generation platform that creates realistic video avatars of you — allowing you to produce professional video content without appearing on camera. You type a script, select your avatar, and HeyGen generates a talking-head video in your likeness. Used by marketers, educators, and businesses to scale video production from hours to minutes.</div></div>
+  </div>
+
+  <div class="faq-item" data-cat="voice" data-q="what is vapi voice ai phone agent">
+    <button class="faq-q" onclick="toggleFAQ(this)">What is VAPI?<span class="faq-icon">+</span></button>
+    <div class="faq-a"><div class="faq-a-inner" style="border-left:3px solid var(--c6)">VAPI is a Voice AI platform that lets you build, deploy, and manage real-time AI phone agents. Your VAPI agent can make outbound calls, handle inbound enquiries, follow scripts, respond dynamically to what callers say, and integrate with your CRM — all without a human agent. It is one of the most powerful tools for scaling customer communication, covered in Module 07.</div></div>
+  </div>
+
+  <div class="faq-item" data-cat="voice" data-q="can i clone my own voice ai elevenlabs">
+    <button class="faq-q" onclick="toggleFAQ(this)">Can I clone my own voice with AI?<span class="faq-icon">+</span></button>
+    <div class="faq-a"><div class="faq-a-inner" style="border-left:3px solid var(--c6)">Yes. Using ElevenLabs Instant Voice Clone, you can clone your voice from a short audio sample. Your AI voice twin can narrate courses, run video voiceovers, power your Voice AI Agent, and produce content in your exact voice 24/7. The academy covers voice cloning ethically and practically — with real business applications you can deploy the same week.</div></div>
+  </div>
+</div>
+
+<!-- ===== SECTION 7: GOVERNANCE & ETHICS ===== -->
+<div class="faq-section fade-in" id="governance" data-cat="governance">
+  <div class="faq-section-header" style="border-color:var(--c7);color:var(--c7)">
+    <div class="faq-section-icon" style="background:var(--c7-bg);border:1px solid var(--c7-border)">🏛️</div>
+    <span class="faq-section-title">AI Governance &amp; Ethics</span>
+    <span class="faq-section-count" style="background:var(--c7-bg);color:var(--c7);border:1px solid var(--c7-border)">3 questions</span>
+  </div>
+
+  <div class="faq-item" data-cat="governance" data-q="is ai safe to use for business gdpr legal compliance">
+    <button class="faq-q" onclick="toggleFAQ(this)">Is AI safe to use for business?<span class="faq-icon">+</span></button>
+    <div class="faq-a"><div class="faq-a-inner" style="border-left:3px solid var(--c7)">Yes — with the right knowledge. The key is understanding what data you share with AI tools, which platforms are GDPR-compliant for business use, how to avoid copyright issues with AI-generated content, and where liability sits when AI makes an error. Module 02 covers AI governance specifically so you can use AI confidently and legally in your business.</div></div>
+  </div>
+
+  <div class="faq-item" data-cat="governance" data-q="does ai content infringe copyright intellectual property">
+    <button class="faq-q" onclick="toggleFAQ(this)">Does AI content infringe copyright?<span class="faq-icon">+</span></button>
+    <div class="faq-a"><div class="faq-a-inner" style="border-left:3px solid var(--c7)">It depends on how it is used. AI-generated content is generally not protected by copyright in the UK and US — and may raise infringement issues if it closely replicates copyrighted training material. The safe approach: use AI as a drafting and enhancement tool, always review and edit outputs, and avoid using AI image generators to replicate specific artists' styles commercially. Module 02 covers this in full.</div></div>
+  </div>
+
+  <div class="faq-item" data-cat="governance" data-q="is it ethical to use ai in business responsible">
+    <button class="faq-q" onclick="toggleFAQ(this)">Is it ethical to use AI in my business?<span class="faq-icon">+</span></button>
+    <div class="faq-a"><div class="faq-a-inner" style="border-left:3px solid var(--c7)">Yes — when used transparently and responsibly. Ethical AI use means disclosing AI involvement where relevant, not using AI to deceive customers, protecting personal data, and ensuring AI outputs are reviewed for accuracy before they reach clients or the public. The academy teaches a responsible AI framework that keeps you and your business protected.</div></div>
+  </div>
+</div>
+
+<!-- ===== SECTION 8: AI MARKETING ===== -->
+<div class="faq-section fade-in" id="marketing" data-cat="marketing">
+  <div class="faq-section-header" style="border-color:var(--c8);color:var(--c8)">
+    <div class="faq-section-icon" style="background:var(--c8-bg);border:1px solid var(--c8-border)">📣</div>
+    <span class="faq-section-title">AI in Marketing &amp; Business</span>
+    <span class="faq-section-count" style="background:var(--c8-bg);color:var(--c8);border:1px solid var(--c8-border)">5 questions</span>
+  </div>
+
+  <div class="faq-item" data-cat="marketing" data-q="how can i use ai for marketing content social media">
+    <button class="faq-q" onclick="toggleFAQ(this)">How can I use AI for marketing?<span class="faq-icon">+</span></button>
+    <div class="faq-a"><div class="faq-a-inner" style="border-left:3px solid var(--c8)">AI transforms marketing by compressing days of work into hours. Use ChatGPT or Claude to write email campaigns, social captions, ad copy, and blog posts. Use Gemini for real-time market research and competitor analysis. Use AI tools to A/B test headlines, personalise messaging at scale, and build entire marketing funnels — all without an agency. The academy covers AI marketing across every channel in Modules 01, 04, and 06.</div></div>
+  </div>
+
+  <div class="faq-item" data-cat="marketing" data-q="can ai build a website web app no code">
+    <button class="faq-q" onclick="toggleFAQ(this)">Can AI build a website or web app without coding?<span class="faq-icon">+</span></button>
+    <div class="faq-a"><div class="faq-a-inner" style="border-left:3px solid var(--c8)">Yes — and this is one of the most powerful skills in the academy. Using AI tools like Bolt, Cursor, Lovable, and Webflow AI, you can describe what you want to build in plain English and have a functioning website or web app generated in minutes. Module 03 covers building web apps, websites, and online platforms entirely with AI — no developers needed.</div></div>
+  </div>
+
+  <div class="faq-item" data-cat="marketing" data-q="how does ai improve productivity save time">
+    <button class="faq-q" onclick="toggleFAQ(this)">How does AI improve productivity?<span class="faq-icon">+</span></button>
+    <div class="faq-a"><div class="faq-a-inner" style="border-left:3px solid var(--c8)">AI improves productivity by eliminating the time cost of repetitive tasks — writing, researching, formatting, scheduling, summarising, and decision-making. Most professionals who complete the academy report saving 8–15 hours per week within their first month. Module 06 is dedicated entirely to building a high-productivity AI stack tailored to your specific role and workflow.</div></div>
+  </div>
+
+  <div class="faq-item" data-cat="marketing" data-q="what are ai workflows automations for business">
+    <button class="faq-q" onclick="toggleFAQ(this)">What can AI automations do for my business?<span class="faq-icon">+</span></button>
+    <div class="faq-a"><div class="faq-a-inner" style="border-left:3px solid var(--c8)">AI automations can handle lead qualification, email follow-up sequences, CRM updates, social media scheduling, invoice processing, customer onboarding, appointment booking, data reporting, and content distribution — all without human involvement once set up. Module 04 covers building these systems using Make, Zapier, and n8n with real business use cases.</div></div>
+  </div>
+
+  <div class="faq-item" data-cat="marketing" data-q="enterprise ai for business scale">
+    <button class="faq-q" onclick="toggleFAQ(this)">What is enterprise-level AI and can small businesses use it?<span class="faq-icon">+</span></button>
+    <div class="faq-a"><div class="faq-a-inner" style="border-left:3px solid var(--c8)">Enterprise-level AI refers to deploying AI across an entire organisation — multiple departments, integrated systems, and scaled automation. The technology that once required a team of engineers is now accessible to solo entrepreneurs and small businesses at a fraction of the cost. Module 05 (Enterprise Level AI for Entrepreneurs) shows you how to implement organisation-wide AI strategy regardless of your team size.</div></div>
+  </div>
+</div>
+
+<!-- ===== SECTION 9: THE ACADEMY ===== -->
+<div class="faq-section fade-in" id="academy" data-cat="academy">
+  <div class="faq-section-header" style="border-color:var(--c9);color:var(--c9)">
+    <div class="faq-section-icon" style="background:var(--c9-bg);border:1px solid var(--c9-border)">🎓</div>
+    <span class="faq-section-title">About the Academy</span>
+    <span class="faq-section-count" style="background:var(--c9-bg);color:var(--c9);border:1px solid var(--c9-border)">6 questions</span>
+  </div>
+
+  <div class="faq-item" data-cat="academy" data-q="do i need coding technical skills ai academy">
+    <button class="faq-q" onclick="toggleFAQ(this)">Do I need coding or technical skills?<span class="faq-icon">+</span></button>
+    <div class="faq-a"><div class="faq-a-inner" style="border-left:3px solid var(--c9)">None whatsoever. Every tool covered in the academy operates through plain English. If you can write an email or send a WhatsApp message, you have every skill required to complete all 7 modules and build working AI systems.</div></div>
+  </div>
+
+  <div class="faq-item" data-cat="academy" data-q="what is included in the plans 397 550 950">
+    <button class="faq-q" onclick="toggleFAQ(this)">What is included in each plan?<span class="faq-icon">+</span></button>
+    <div class="faq-a"><div class="faq-a-inner" style="border-left:3px solid var(--c9)">The Core plan (£397/month) includes all 7 structured modules, the full prompt library, community access, and monthly live Q&amp;A with Sam. The Growth plan (£550/month) adds advanced marketing systems, full web development, bi-weekly coaching, and a completion certificate. The Elite plan (£950/month) includes everything in Growth plus monthly 1-to-1 sessions directly with Sam, a bespoke AI strategy for your business, and a 90-day roadmap. <a href="https://www.aiacademyforbeginners.com/plans/" style="color:var(--accent-light)">See full plan comparison →</a></div></div>
+  </div>
+
+  <div class="faq-item" data-cat="academy" data-q="how long does 7 module program take time">
+    <button class="faq-q" onclick="toggleFAQ(this)">How long does the full 7-module program take?<span class="faq-icon">+</span></button>
+    <div class="faq-a"><div class="faq-a-inner" style="border-left:3px solid var(--c9)">Most learners move through all 7 modules in 4–8 weeks at a comfortable pace. Each module is structured to deliver a practical, usable outcome within the session — so you are building real capability from day one, not just watching videos. You retain full access so you can revisit any module at any time.</div></div>
+  </div>
+
+  <div class="faq-item" data-cat="academy" data-q="will i receive a certificate completion linkedin cv">
+    <button class="faq-q" onclick="toggleFAQ(this)">Will I receive a certificate?<span class="faq-icon">+</span></button>
+    <div class="faq-a"><div class="faq-a-inner" style="border-left:3px solid var(--c9)">Yes. The Growth and Elite plans include a certificate of completion. This can be added to your CV, LinkedIn profile, and client proposals. In 2026, AI certification is a meaningful differentiator in hiring, client pitching, and professional positioning.</div></div>
+  </div>
+
+  <div class="faq-item" data-cat="academy" data-q="is there a refund policy money back guarantee">
+    <button class="faq-q" onclick="toggleFAQ(this)">Is there a refund policy?<span class="faq-icon">+</span></button>
+    <div class="faq-a"><div class="faq-a-inner" style="border-left:3px solid var(--c9)">Yes — 30 days, no questions asked. If after going through the first two modules you feel the program is not right for you, email hello@aiacademyforbeginners.com within 30 days of purchase for a full refund. We are confident enough in the quality of this training to back it fully.</div></div>
+  </div>
+
+  <div class="faq-item" data-cat="academy" data-q="team enterprise group business pricing">
+    <button class="faq-q" onclick="toggleFAQ(this)">Do you offer team or enterprise pricing?<span class="faq-icon">+</span></button>
+    <div class="faq-a"><div class="faq-a-inner" style="border-left:3px solid var(--c9)">Yes. We work with teams, organisations, and enterprises for group AI training. Email partnerships@aiacademyforbeginners.com with your team size and goals and we will put together a tailored proposal — typically within 48 hours.</div></div>
+  </div>
+</div>
+
+</div><!-- /faq-main -->
+</div><!-- /faq-layout -->
+
+<!-- CTA STRIP -->
+<div class="cta-strip fade-in">
+  <h2>Still have a question?<br/><span class="gradient-text">Ask Sam directly.</span></h2>
+  <p>Join 50,000+ learners who went from zero AI knowledge to real business results. Or reach out — we answer every email.</p>
+  <div class="cta-group">
+    <a href="https://www.howtogeneratenewbusiness.com/revenue-1st-ai-community" class="btn-primary">Enrol from £397/month →</a>
+    <a href="https://www.aiacademyforbeginners.com/contact-us/" class="btn-secondary">Contact Us</a>
+    <a href="https://www.aiacademyforbeginners.com/plans/" class="btn-secondary">Compare Plans</a>
+  </div>
+</div>
+
+</div><!-- /container -->
+</main>
+
+<footer class="simple-footer">
+  <ul class="footer-nav">
+    <li><a href="https://www.aiacademyforbeginners.com/">Home</a></li>
+    <li><a href="https://www.aiacademyforbeginners.com/plans/">Plans</a></li>
+    <li><a href="https://www.aiacademyforbeginners.com/faqs/">FAQs</a></li>
+    <li><a href="https://www.aiacademyforbeginners.com/join-revenue-1st-community/">Community</a></li>
+    <li><a href="https://www.aiacademyforbeginners.com/ai_blogs/">Blog</a></li>
+    <li><a href="https://www.aiacademyforbeginners.com/contact-us/">Contact</a></li>
+    <li><a href="https://www.howtogeneratenewbusiness.com/revenue-1st-ai-community">Enrol</a></li>
+  </ul>
+  <p>© 2026 AI Academy for Beginners. All rights reserved.</p>
+</footer>
+
+<script>
+/* ---- ACCORDION ---- */
+function toggleFAQ(btn){
+  var item=btn.closest('.faq-item');
+  var ans=item.querySelector('.faq-a');
+  var inner=item.querySelector('.faq-a-inner');
+  var icon=item.querySelector('.faq-icon');
+  var isOpen=item.classList.contains('open');
+  // close all
+  document.querySelectorAll('.faq-item.open').forEach(function(i){
+    i.classList.remove('open');
+    i.querySelector('.faq-a').style.maxHeight='0';
+    i.querySelector('.faq-icon').textContent='+';
+  });
+  if(!isOpen){
+    item.classList.add('open');
+    ans.style.maxHeight=inner.scrollHeight+'px';
+    icon.textContent='−';
+  }
+}
+
+/* ---- SEARCH ---- */
+function searchFAQs(val){
+  var q=val.trim().toLowerCase();
+  var items=document.querySelectorAll('.faq-item');
+  var visible=0;
+  items.forEach(function(item){
+    var text=(item.dataset.q||'')+(item.querySelector('.faq-q').textContent||'')+(item.querySelector('.faq-a-inner').textContent||'');
+    var show=!q||text.toLowerCase().includes(q);
+    item.classList.toggle('hidden',!show);
+    if(show)visible++;
+  });
+  // show/hide sections
+  document.querySelectorAll('.faq-section').forEach(function(sec){
+    var anyVisible=sec.querySelectorAll('.faq-item:not(.hidden)').length>0;
+    sec.style.display=anyVisible?'':'none';
+  });
+  var countEl=document.getElementById('searchCount');
+  if(q){
+    countEl.textContent=visible+' result'+(visible!==1?'s':'')+' for "'+val.trim()+'"';
+  } else {
+    countEl.textContent='';
+    document.querySelectorAll('.faq-section').forEach(function(s){s.style.display='';});
+  }
+  document.getElementById('noResults').style.display=(q&&visible===0)?'block':'none';
+}
+
+/* ---- CATEGORY FILTER ---- */
+function filterCat(cat, btn){
+  // update active button
+  document.querySelectorAll('.cat-btn').forEach(function(b){
+    b.classList.remove('active');
+    b.style.background='';b.style.color='';b.style.borderColor='';
+  });
+  btn.classList.add('active');
+  btn.style.background='linear-gradient(135deg,var(--accent),#5b21b6)';
+  btn.style.color='#fff';
+  btn.style.borderColor='transparent';
+  // clear search
+  document.getElementById('faqSearch').value='';
+  document.getElementById('searchCount').textContent='';
+  document.getElementById('noResults').style.display='none';
+  // show/hide sections
+  document.querySelectorAll('.faq-section').forEach(function(sec){
+    sec.style.display=(cat==='all'||sec.dataset.cat===cat)?'':'none';
+    // reset items
+    sec.querySelectorAll('.faq-item').forEach(function(i){i.classList.remove('hidden');});
+  });
+}
+
+/* ---- SIDEBAR ACTIVE ON SCROLL ---- */
+(function(){
+  var sections=document.querySelectorAll('.faq-section');
+  var links=document.querySelectorAll('.sidebar-link');
+  function onScroll(){
+    var scrollY=window.scrollY+120;
+    var current='';
+    sections.forEach(function(s){
+      if(s.offsetTop<=scrollY)current=s.id;
+    });
+    links.forEach(function(l){
+      l.classList.toggle('active-section',l.dataset.section===current);
+    });
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});
+  onScroll();
+})();
+
+/* ---- FADE IN ---- */
+(function(){
+  if(!('IntersectionObserver' in window))return;
+  var obs=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);}
+    });
+  },{threshold:0.06});
+  document.querySelectorAll('.fade-in').forEach(function(el){obs.observe(el);});
+})();
+
+/* ---- MOBILE MENU ---- */
+function openMobileMenu(){document.getElementById('mobileMenu').classList.add('open');}
+function closeMobileMenu(){document.getElementById('mobileMenu').classList.remove('open');}
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeMobileMenu();});
+</script>
+</body>
+</html>
