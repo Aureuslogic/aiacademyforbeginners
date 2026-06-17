@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="Official AI Partners">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#164e63"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1050" cy="120" r="180" fill="rgba(255,255,255,0.08)"/>
+  <circle cx="120" cy="580" r="220" fill="rgba(255,255,255,0.06)"/>
+  <text x="80" y="280" font-size="120">🏆</text>
+  <text x="80" y="390" fill="#f8fafc" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="52" font-weight="800">Official AI Partners</text>
+  <text x="80" y="450" fill="rgba(241,245,249,0.75)" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="28" font-weight="600">AI Academy for Beginners</text>
+</svg>

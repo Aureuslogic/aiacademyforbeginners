@@ -25,8 +25,8 @@ const routes = {
   '/faqs/': '/faq.html',
   '/contact-us': '/contact-us.html',
   '/contact-us/': '/contact-us.html',
-  '/ai_blogs': '/blog.html',
-  '/ai_blogs/': '/blog.html',
+  '/ai_blogs': '/ai_blogs.html',
+  '/ai_blogs/': '/ai_blogs.html',
   '/7-inspiring-secrets-from-sam-onigbanjo-gtm-architects': '/about-sam.html',
   '/7-inspiring-secrets-from-sam-onigbanjo-gtm-architects/': '/about-sam.html',
 };
@@ -34,7 +34,8 @@ const routes = {
 http.createServer((req, res) => {
   const url = decodeURIComponent(req.url.split('?')[0]);
   const file = routes[url] || url;
-  const filePath = path.join(root, file);
+  const relative = file.startsWith('/') ? file.slice(1) : file;
+  const filePath = path.join(root, relative);
 
   if (!filePath.startsWith(root)) {
     res.writeHead(403);
