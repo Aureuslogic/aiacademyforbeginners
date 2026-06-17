@@ -84,6 +84,12 @@ h1{font-family:var(--font);font-size:clamp(34px,6vw,70px);font-weight:900;line-h
 .gradient-text-warm{background:linear-gradient(135deg,#f59e0b 0%,#ef4444 50%,#a78bfa 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .hero-sub{font-size:clamp(16px,2.2vw,20px);color:var(--text-secondary);max-width:640px;margin:0 auto 40px;line-height:1.7}
 .hero-ctas{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:48px}
+.scroll-down-wrap{margin-top:8px}
+.scroll-down{display:inline-flex;align-items:center;gap:10px;color:var(--text-secondary);text-decoration:none;font-size:14px;font-weight:600;padding:12px 22px;border-radius:999px;border:1px solid var(--border);background:rgba(255,255,255,.03);transition:all .2s}
+.scroll-down:hover{color:var(--accent-light);border-color:rgba(124,58,237,.4);background:rgba(124,58,237,.08);transform:translateY(2px)}
+.scroll-down .arrow{font-size:1.1rem;line-height:1;animation:scrollBob 1.8s ease-in-out infinite}
+@keyframes scrollBob{0%,100%{transform:translateY(0)}50%{transform:translateY(4px)}}
+section[id]{scroll-margin-top:88px}
 .btn-primary{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,var(--accent) 0%,#5b21b6 100%);color:#fff;text-decoration:none;padding:16px 32px;border-radius:50px;font-family:var(--font);font-weight:700;font-size:15.5px;box-shadow:0 8px 32px rgba(124,58,237,.45);transition:transform .2s,box-shadow .2s;letter-spacing:-.2px;border:none;cursor:pointer}
 .btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(124,58,237,.6)}
 .btn-secondary{display:inline-flex;align-items:center;gap:10px;background:var(--surface);color:var(--text-primary);text-decoration:none;padding:16px 32px;border-radius:50px;border:1px solid var(--border-bright);font-family:var(--font);font-weight:600;font-size:15.5px;backdrop-filter:blur(8px);transition:all .2s}
@@ -398,6 +404,9 @@ footer{position:relative;z-index:1;border-top:1px solid var(--border);padding:44
       <div class="sp-item">🎓 <span class="sp-num">7</span> learning modules</div>
       <div class="sp-item">🤖 <span class="sp-num">4</span> AI tools mastered</div>
       <div class="sp-item">📜 <span class="sp-num">Certificate</span> included</div>
+    </div>
+    <div class="scroll-down-wrap">
+      <a href="#about" class="scroll-down">Explore what’s inside <span class="arrow" aria-hidden="true">↓</span></a>
     </div>
   </div>
 </header>
@@ -1244,11 +1253,11 @@ div aria-hidden="true" style="display:none">
       <div>
         <h4 style="font-weight:600;margin-bottom:16px;color:var(--text);">Learn AI</h4>
         <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
-          <li><a href="https://www.aiacademyforbeginners.com/ai-for-accountants/" style="color:var(--text-muted);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='var(--accent-light)'" onmouseout="this.style.color='var(--text-muted)'">AI for Accountants</a></li>
-          <li><a href="https://www.aiacademyforbeginners.com/ai-in-marketing/" style="color:var(--text-muted);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='var(--accent-light)'" onmouseout="this.style.color='var(--text-muted)'">AI in Marketing</a></li>
-          <li><a href="https://www.aiacademyforbeginners.com/ai-for-productivity-in-schools/" style="color:var(--text-muted);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='var(--accent-light)'" onmouseout="this.style.color='var(--text-muted)'">AI for Schools</a></li>
-          <li><a href="https://www.aiacademyforbeginners.com/a-i-for-your-business-success/" style="color:var(--text-muted);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='var(--accent-light)'" onmouseout="this.style.color='var(--text-muted)'">AI for Business</a></li>
-          <li><a href="https://www.aiacademyforbeginners.com/land-that-job-with-ai-and-a-tailored-cv/" style="color:var(--text-muted);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='var(--accent-light)'" onmouseout="this.style.color='var(--text-muted)'">CV with AI</a></li>
+          <li><span style="color:var(--text-muted);">AI for Accountants</span></li>
+          <li><span style="color:var(--text-muted);">AI in Marketing</span></li>
+          <li><span style="color:var(--text-muted);">AI for Schools</span></li>
+          <li><span style="color:var(--text-muted);">AI for Business</span></li>
+          <li><span style="color:var(--text-muted);">CV with AI</span></li>
         </ul>
       </div>
       <div>
@@ -1257,6 +1266,8 @@ div aria-hidden="true" style="display:none">
           <li><a href="/7-inspiring-secrets-from-sam-onigbanjo-gtm-architects/" style="color:var(--text-muted);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='var(--accent-light)'" onmouseout="this.style.color='var(--text-muted)'">About Sam</a></li>
           <li><a href="/ai_blogs/" style="color:var(--text-muted);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='var(--accent-light)'" onmouseout="this.style.color='var(--text-muted)'">AI Blog</a></li>
           <li><a href="/contact-us/" style="color:var(--text-muted);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='var(--accent-light)'" onmouseout="this.style.color='var(--text-muted)'">Contact</a></li>
+          <li><a href="/terms-and-conditions/" style="color:var(--text-muted);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='var(--accent-light)'" onmouseout="this.style.color='var(--text-muted)'">Terms &amp; Conditions</a></li>
+          <li><a href="/privacy-policy/" style="color:var(--text-muted);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='var(--accent-light)'" onmouseout="this.style.color='var(--text-muted)'">Data Protection</a></li>
         </ul>
       </div>
       <div>

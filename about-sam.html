@@ -12,6 +12,7 @@
 <meta property="og:title" content="About Sam Onigbanjo | AI Academy for Beginners"/>
 <meta property="og:description" content="7 inspiring lessons from the mind behind AI Academy for Beginners — GTM Architect, AI strategist, and the person teaching 50,000+ professionals to win with AI."/>
 <meta property="og:url" content="/7-inspiring-secrets-from-sam-onigbanjo-gtm-architects/"/>
+<meta property="og:image" content="/images/sam-onigbanjo.png"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
 <style>
@@ -53,7 +54,7 @@ nav{position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-co
 /* HERO */
 .about-hero{padding:80px 24px 60px;position:relative;overflow:hidden}
 .about-hero::before{content:'';position:absolute;top:-100px;left:50%;transform:translateX(-50%);width:800px;height:500px;background:radial-gradient(ellipse,rgba(124,58,237,.15) 0%,transparent 70%);pointer-events:none}
-.hero-inner{display:grid;grid-template-columns:1fr 380px;gap:60px;align-items:center;max-width:1080px;margin:0 auto}
+.hero-inner{display:grid;grid-template-columns:1fr 340px;gap:60px;align-items:center;max-width:1080px;margin:0 auto}
 @media(max-width:860px){.hero-inner{grid-template-columns:1fr;text-align:center}}
 
 .gradient-text{background:linear-gradient(135deg,var(--accent-light),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
@@ -70,10 +71,23 @@ nav{position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-co
 .hero-stat .num{font-size:2rem;font-weight:900;letter-spacing:-1px;line-height:1}
 .hero-stat .lbl{font-size:12px;color:var(--text-muted);margin-top:2px}
 
+.scroll-down-wrap{text-align:center;margin-top:28px}
+@media(max-width:860px){.scroll-down-wrap{margin-top:36px}}
+.scroll-down{display:inline-flex;align-items:center;gap:10px;color:var(--text-secondary);text-decoration:none;font-size:14px;font-weight:600;padding:12px 22px;border-radius:999px;border:1px solid var(--border);background:rgba(255,255,255,.03);transition:all .2s}
+.scroll-down:hover{color:var(--accent-light);border-color:rgba(124,58,237,.4);background:rgba(124,58,237,.08);transform:translateY(2px)}
+.scroll-down .arrow{font-size:1.1rem;line-height:1;animation:bob 1.8s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(4px)}}
+
+.page-jump{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;max-width:720px;margin:0 auto 48px;padding:0 24px}
+.page-jump a{color:var(--text-secondary);text-decoration:none;font-size:13px;font-weight:600;padding:10px 16px;border-radius:999px;border:1px solid var(--border);background:var(--surface);transition:all .2s}
+.page-jump a:hover{color:var(--accent-light);border-color:rgba(124,58,237,.4);background:rgba(124,58,237,.08)}
+section[id],div[id]{scroll-margin-top:88px}
+
 /* AVATAR CARD */
 .avatar-card{background:linear-gradient(135deg,rgba(124,58,237,.2),rgba(6,182,212,.1));border:1px solid rgba(124,58,237,.35);border-radius:28px;padding:36px;text-align:center;position:relative;overflow:hidden}
 .avatar-card::before{content:'';position:absolute;top:-40px;right:-40px;width:160px;height:160px;border-radius:50%;background:radial-gradient(rgba(124,58,237,.3),transparent 70%);pointer-events:none}
 .avatar-initials{width:100px;height:100px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent2));display:flex;align-items:center;justify-content:center;font-size:2.4rem;font-weight:900;color:#fff;margin:0 auto 20px;border:3px solid rgba(255,255,255,.15)}
+.avatar-photo{width:100%;max-width:280px;aspect-ratio:4/5;object-fit:cover;object-position:center top;border-radius:20px;margin:0 auto 20px;display:block;border:3px solid rgba(255,255,255,.12);box-shadow:0 16px 48px rgba(0,0,0,.35)}
 .avatar-card h3{font-size:1.2rem;font-weight:800;margin-bottom:4px}
 .avatar-card .role{color:var(--accent-light);font-size:0.875rem;font-weight:600;margin-bottom:16px}
 .tag-list{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:20px}
@@ -199,7 +213,7 @@ nav{position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-co
         </div>
       </div>
       <div class="avatar-card fade-in">
-        <div class="avatar-initials">SO</div>
+        <img class="avatar-photo" src="/images/sam-onigbanjo.png" alt="Sam Onigbanjo, Technology Interventionist at the 7th Nigeria Diaspora Investment Summit" width="280" height="350" loading="eager"/>
         <h3>Sam Onigbanjo</h3>
         <p class="role">GTM Architect &amp; AI Educator</p>
         <div class="tag-list">
@@ -214,12 +228,22 @@ nav{position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-co
         <p style="font-size:11px;color:var(--text-muted);margin-top:10px">Join 50,000+ learners · From £19/month</p>
       </div>
     </div>
+    <div class="scroll-down-wrap">
+      <a href="#seven-secrets" class="scroll-down">Read Sam’s 7 lessons <span class="arrow" aria-hidden="true">↓</span></a>
+    </div>
   </section>
 
   <div class="divider"></div>
 
+  <nav class="page-jump" aria-label="Page sections">
+    <a href="#seven-secrets">7 Lessons</a>
+    <a href="#journey">The Journey</a>
+    <a href="#mission">Mission</a>
+    <a href="#enrol">Enrol</a>
+  </nav>
+
   <!-- CREDIBILITY BAR -->
-  <div class="container">
+  <div class="container" id="stats">
     <div class="cred-bar fade-in">
       <div class="cred-item"><div class="num gradient-text">50,000+</div><div class="lbl">Professionals<br/>trained globally</div></div>
       <div class="cred-item"><div class="num" style="color:var(--accent2)">12+</div><div class="lbl">Industries<br/>represented</div></div>
@@ -229,7 +253,7 @@ nav{position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-co
   </div>
 
   <!-- 7 SECRETS -->
-  <div class="secrets-intro">
+  <div class="secrets-intro" id="seven-secrets">
     <span class="section-label">7 Lessons from Sam</span>
     <h2>The insights that built<br/><span class="gradient-text">an academy of 50,000.</span></h2>
     <p>These are not theories. These are the hard-won principles Sam has lived, applied, and now teaches — from corporate GTM strategy to building one of the UK's most active AI learning communities.</p>
@@ -311,7 +335,7 @@ nav{position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-co
     </div>
 
     <!-- TIMELINE -->
-    <div style="text-align:center;margin-bottom:48px">
+    <div id="journey" style="text-align:center;margin-bottom:48px">
       <span class="section-label">The Journey</span>
       <h2 style="font-size:clamp(1.5rem,3vw,2.2rem);font-weight:900;letter-spacing:-1px;margin-top:12px">From GTM Architect<br/><span class="gradient-text">to AI Academy Founder</span></h2>
     </div>
@@ -344,7 +368,7 @@ nav{position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-co
     </div>
 
     <!-- MISSION -->
-    <div class="mission-block fade-in">
+    <div class="mission-block fade-in" id="mission">
       <h2>The mission has not changed.<br/><span class="gradient-text">Make AI work for everyone.</span></h2>
       <p>Sam built AI Academy for Beginners because he believes that the benefits of AI should not be reserved for those with technical backgrounds or corporate budgets. Every professional, every entrepreneur, every career-switcher deserves access to practical AI skills — taught clearly, applied immediately, and built to generate real-world results.</p>
       <p style="color:var(--text-secondary);font-size:0.9rem;margin-top:0">That mission is what drives every module, every Q&amp;A session, every community post, and every update to the curriculum.</p>
@@ -353,7 +377,7 @@ nav{position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-co
   </div>
 
   <!-- CTA -->
-  <div class="page-cta">
+  <div class="page-cta" id="enrol">
     <h2>Learn directly from Sam.<br/><span class="gradient-text">Start today.</span></h2>
     <p>Join 50,000+ professionals already using AI to work smarter, earn more, and build with confidence. No technical skills needed.</p>
     <div class="cta-group">
@@ -372,6 +396,8 @@ nav{position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-co
     <li><a href="/faqs/">FAQs</a></li>
     <li><a href="/ai_blogs/">Blog</a></li>
     <li><a href="/contact-us/">Contact</a></li>
+    <li><a href="/terms-and-conditions/">Terms &amp; Conditions</a></li>
+    <li><a href="/privacy-policy/">Data Protection</a></li>
     <li><a href="/plans/">Enrol</a></li>
   </ul>
   <p>© 2026 AI Academy for Beginners. All rights reserved.</p>

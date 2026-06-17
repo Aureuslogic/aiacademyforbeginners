@@ -29,6 +29,16 @@ const routes = {
   '/ai_blogs/': '/ai_blogs.html',
   '/7-inspiring-secrets-from-sam-onigbanjo-gtm-architects': '/about-sam.html',
   '/7-inspiring-secrets-from-sam-onigbanjo-gtm-architects/': '/about-sam.html',
+  '/terms-and-conditions': '/terms-and-conditions.html',
+  '/terms-and-conditions/': '/terms-and-conditions.html',
+  '/privacy-policy': '/privacy-policy.html',
+  '/privacy-policy/': '/privacy-policy.html',
+  '/refund-policy': '/refund-policy.html',
+  '/refund-policy/': '/refund-policy.html',
+  '/cookie-policy': '/cookie-policy.html',
+  '/cookie-policy/': '/cookie-policy.html',
+  '/disclaimer': '/disclaimer.html',
+  '/disclaimer/': '/disclaimer.html',
 };
 
 http.createServer((req, res) => {

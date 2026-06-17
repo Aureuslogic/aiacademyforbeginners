@@ -6,7 +6,9 @@ img, video, iframe { max-width: 100%; height: auto; }
 
 /* ── Navigation ── */
 @media (max-width: 900px) {
-  nav {
+  nav.site-nav,
+  nav#mainNav,
+  nav[aria-label="Main navigation"] {
     width: calc(100% - 20px) !important;
     max-width: 100% !important;
     left: 50% !important;
@@ -16,16 +18,27 @@ img, video, iframe { max-width: 100%; height: auto; }
     gap: 10px !important;
     border-radius: 18px !important;
   }
-  .nav-logo { font-size: 12px !important; max-width: 52vw; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-  .nav-logo img { height: 28px !important; }
-  .nav-cta { display: none !important; }
-  nav .nav-cta { display: none !important; }
+  nav.site-nav .nav-logo,
+  nav#mainNav .nav-logo,
+  nav[aria-label="Main navigation"] .nav-logo { font-size: 12px !important; max-width: 52vw; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  nav.site-nav .nav-logo img,
+  nav#mainNav .nav-logo img,
+  nav[aria-label="Main navigation"] .nav-logo img { height: 28px !important; }
+  nav.site-nav .nav-cta,
+  nav#mainNav .nav-cta,
+  nav[aria-label="Main navigation"] .nav-cta { display: none !important; }
 }
 
 @media (max-width: 860px) {
-  nav { padding: 0 16px !important; height: 60px !important; }
-  .nav-links { display: none !important; }
-  .hamburger { display: flex !important; }
+  nav.site-nav,
+  nav#mainNav,
+  nav[aria-label="Main navigation"] { padding: 0 16px !important; height: 60px !important; }
+  nav.site-nav .nav-links,
+  nav#mainNav .nav-links,
+  nav[aria-label="Main navigation"] .nav-links { display: none !important; }
+  nav.site-nav .hamburger,
+  nav#mainNav .hamburger,
+  nav[aria-label="Main navigation"] .hamburger { display: flex !important; }
 }
 
 /* ── Hero & typography ── */
@@ -116,6 +129,25 @@ img, video, iframe { max-width: 100%; height: auto; }
   .testi-strip, .testimonials-grid { grid-template-columns: 1fr !important; }
   .what-grid { grid-template-columns: 1fr !important; }
   .plans-grid { grid-template-columns: 1fr !important; }
+}
+
+/* ── Legal policy pages ── */
+@media (max-width: 768px) {
+  .legal-nav { gap: 8px !important; padding: 16px !important; }
+  .legal-nav a { font-size: 12px !important; padding: 8px 12px !important; }
+  .legal-content h2 { font-size: 1.05rem !important; }
+  .legal-table { font-size: 12px !important; }
+  .legal-table th, .legal-table td { padding: 10px !important; }
+  .legal-toc-links { grid-template-columns: 1fr !important; }
+}
+
+/* ── About Sam & homepage scroll ── */
+@media (max-width: 768px) {
+  .page-jump { padding: 0 16px !important; gap: 8px !important; }
+  .page-jump a { font-size: 12px !important; padding: 8px 14px !important; }
+  .scroll-down { font-size: 13px !important; padding: 10px 18px !important; }
+  .video-enrol-form { flex-direction: column !important; }
+  .video-enrol-btn { width: 100% !important; }
 }
 
 /* ── VAPI widget — keep off nav on small screens ── */
