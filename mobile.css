@@ -1,0 +1,124 @@
+/* AI Academy — shared mobile responsive styles */
+
+html { -webkit-text-size-adjust: 100%; }
+
+img, video, iframe { max-width: 100%; height: auto; }
+
+/* ── Navigation ── */
+@media (max-width: 900px) {
+  nav {
+    width: calc(100% - 20px) !important;
+    max-width: 100% !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    top: 10px !important;
+    padding: 8px 14px !important;
+    gap: 10px !important;
+    border-radius: 18px !important;
+  }
+  .nav-logo { font-size: 12px !important; max-width: 52vw; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .nav-logo img { height: 28px !important; }
+  .nav-cta { display: none !important; }
+  nav .nav-cta { display: none !important; }
+}
+
+@media (max-width: 860px) {
+  nav { padding: 0 16px !important; height: 60px !important; }
+  .nav-links { display: none !important; }
+  .hamburger { display: flex !important; }
+}
+
+/* ── Hero & typography ── */
+@media (max-width: 768px) {
+  .hero { min-height: auto !important; padding: 110px 16px 64px !important; }
+  .hero-inner { padding: 0 4px; }
+  h1, .page-title { letter-spacing: -1.2px !important; }
+  .hero-sub, .page-sub { font-size: 15px !important; padding: 0 4px; }
+  .hero-ctas { flex-direction: column !important; align-items: stretch !important; gap: 10px !important; }
+  .hero-ctas .btn-primary, .hero-ctas .btn-secondary,
+  .hero-ctas a[class*="btn"] { width: 100% !important; justify-content: center !important; text-align: center; }
+  .social-proof { gap: 12px 16px !important; flex-direction: column !important; }
+  .urgency-bar { font-size: 12px !important; padding: 9px 12px !important; line-height: 1.45; }
+  section { padding-left: 16px !important; padding-right: 16px !important; }
+  .container { padding-left: 16px !important; padding-right: 16px !important; }
+  .section-sub { margin-bottom: 32px !important; font-size: 15px !important; }
+  .page-hero { padding: 88px 16px 48px !important; }
+}
+
+/* ── Grids (homepage inline + shared) ── */
+@media (max-width: 768px) {
+  #pricing .container > div[style*="grid-template-columns"],
+  #community .container > div[style*="grid-template-columns"],
+  section .container > div[style*="grid-template-columns:1fr 1fr"],
+  section .container > div[style*="grid-template-columns: 1fr 1fr"],
+  section .container > div[style*="repeat(4,1fr)"],
+  section .container > div[style*="1fr 1fr 1fr"],
+  section .container > div[style*="2fr 1fr"] {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+  footer .container > div[style*="grid-template-columns"] {
+    grid-template-columns: 1fr !important;
+    gap: 28px !important;
+  }
+  footer .container > div[style*="justify-content:space-between"] {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    text-align: left !important;
+  }
+}
+
+@media (max-width: 480px) {
+  section .container > div[style*="repeat(4,1fr)"] {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* ── Pricing & buttons ── */
+@media (max-width: 768px) {
+  .price { font-size: 48px !important; }
+  .pricing-card { padding: 32px 20px !important; }
+  .plan-card { padding: 28px 20px !important; }
+  .btn-primary, .btn-secondary, .cta-primary, .cta-secondary, .plan-btn {
+    font-size: 14px !important;
+    padding: 14px 20px !important;
+  }
+  .compare-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin-left: -16px; margin-right: -16px; padding: 0 16px; }
+  .compare-table { min-width: 560px; font-size: 12px !important; }
+  .compare-table th, .compare-table td { padding: 10px 12px !important; }
+}
+
+/* ── Forms & email capture ── */
+@media (max-width: 600px) {
+  .email-form, form[style*="display:flex"] {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+  .email-form input, .email-form button,
+  form[style*="display:flex"] input, form[style*="display:flex"] button {
+    width: 100% !important;
+  }
+  .form-card { padding: 24px 18px !important; }
+  .contact-grid { gap: 24px !important; margin: 32px 0 !important; }
+  .guarantee { padding: 24px 18px !important; }
+}
+
+/* ── FAQ page ── */
+@media (max-width: 760px) {
+  .faq-layout { grid-template-columns: 1fr !important; }
+  .faq-sidebar { display: none !important; }
+  .cat-nav { gap: 6px !important; }
+  .cat-btn { font-size: 11px !important; padding: 7px 12px !important; }
+}
+
+/* ── Tables & testimonials ── */
+@media (max-width: 700px) {
+  .testi-strip, .testimonials-grid { grid-template-columns: 1fr !important; }
+  .what-grid { grid-template-columns: 1fr !important; }
+  .plans-grid { grid-template-columns: 1fr !important; }
+}
+
+/* ── VAPI widget — keep off nav on small screens ── */
+@media (max-width: 480px) {
+  vapi-widget { --vapi-widget-width: 100vw; }
+}
