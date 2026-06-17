@@ -78,6 +78,7 @@ h1.page-title{font-size:clamp(2rem,5vw,3.5rem);font-weight:900;letter-spacing:-1
 .form-card h2{font-size:1.5rem;font-weight:800;margin-bottom:6px}
 .form-card p{color:var(--text-secondary);font-size:0.9rem;margin-bottom:28px;line-height:1.6}
 .form-group{margin-bottom:18px}
+.honeypot{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;opacity:0;pointer-events:none}
 .form-group label{display:block;font-size:13px;font-weight:600;color:var(--text-secondary);margin-bottom:6px;letter-spacing:.2px}
 .form-group input,.form-group select,.form-group textarea{width:100%;background:rgba(255,255,255,.06);border:1px solid var(--border);border-radius:12px;padding:13px 16px;color:var(--text);font-size:14px;font-family:var(--font);outline:none;transition:border-color .2s;resize:vertical}
 .form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--accent);background:rgba(124,58,237,.06)}
@@ -114,7 +115,6 @@ h1.page-title{font-size:clamp(2rem,5vw,3.5rem);font-weight:900;letter-spacing:-1
 <div class="mobile-menu" id="mobileMenu">
   <button class="mobile-close" onclick="closeMobileMenu()">✕</button>
   <a href="/">🏠 Home</a>
-  <a href="https://www.aiacademyforbeginners.com/join-revenue-1st-community/">💰 Revenue 1st Community</a>
   <a href="/7-inspiring-secrets-from-sam-onigbanjo-gtm-architects/">👤 About Sam</a>
   <a href="https://www.aiacademyforbeginners.com/ai-for-accountants/">📊 AI for Accountants</a>
   <a href="https://www.aiacademyforbeginners.com/ai-for-productivity-in-schools/">🏫 AI for Schools</a>
@@ -122,6 +122,7 @@ h1.page-title{font-size:clamp(2rem,5vw,3.5rem);font-weight:900;letter-spacing:-1
   <a href="https://www.aiacademyforbeginners.com/a-i-for-your-business-success/">🚀 AI for Business</a>
   <a href="/plans/">📋 Plans</a>
   <a href="/faqs/">❓ FAQs</a>
+  <a href="/ai_blogs/">✍️ Blog</a>
   <a href="/contact-us/" style="color:var(--accent-light)">📩 Contact</a>
   <a href="https://www.howtogeneratenewbusiness.com/revenue-1st-ai-community" style="color:var(--accent-light);font-weight:800;border-color:var(--accent)">⚡ Join Now — from £19/month</a>
 </div>
@@ -130,10 +131,9 @@ h1.page-title{font-size:clamp(2rem,5vw,3.5rem);font-weight:900;letter-spacing:-1
   <a href="/" class="nav-logo"><img src="/favicon.svg" alt="" width="26" height="26" style="display:inline-block;vertical-align:middle;margin-right:8px;border-radius:6px">AI Academy <span>for Beginners</span></a>
   <ul class="nav-links">
     <li><a href="/">Home</a></li>
-    <li><a href="https://www.aiacademyforbeginners.com/join-revenue-1st-community/">Community</a></li>
-    <li><a href="https://www.aiacademyforbeginners.com/ai_blogs/">Blog</a></li>
     <li><a href="/plans/">Plans</a></li>
     <li><a href="/faqs/">FAQs</a></li>
+    <li><a href="/ai_blogs/">Blog</a></li>
     <li><a href="/contact-us/" class="active">Contact</a></li>
   </ul>
   <a href="https://www.howtogeneratenewbusiness.com/revenue-1st-ai-community" class="nav-cta">Join from £19 →</a>
@@ -163,15 +163,6 @@ h1.page-title{font-size:clamp(2rem,5vw,3.5rem);font-weight:900;letter-spacing:-1
               <h3>Email</h3>
               <a href="mailto:hello@aiacademyforbeginners.com">hello@aiacademyforbeginners.com</a>
               <p>We typically respond within 24 hours on business days.</p>
-            </div>
-          </div>
-
-          <div class="contact-item">
-            <div class="contact-icon" style="background:rgba(6,182,212,.12)">👥</div>
-            <div>
-              <h3>Community (fastest response)</h3>
-              <a href="https://www.aiacademyforbeginners.com/join-revenue-1st-community/">Join the Revenue 1st Community →</a>
-              <p>50,000+ members. Sam checks in daily. Most questions are answered within hours by peers and the team.</p>
             </div>
           </div>
 
@@ -241,7 +232,6 @@ h1.page-title{font-size:clamp(2rem,5vw,3.5rem);font-weight:900;letter-spacing:-1
               <option>Technical / account issue</option>
               <option>Partnership or enterprise training</option>
               <option>Media / speaking enquiry</option>
-              <option>Community (Revenue 1st)</option>
               <option>Something else</option>
             </select>
           </div>
@@ -250,6 +240,10 @@ h1.page-title{font-size:clamp(2rem,5vw,3.5rem);font-weight:900;letter-spacing:-1
             <textarea id="msg" name="message" placeholder="Tell us how we can help you..." required></textarea>
           </div>
           <input type="hidden" name="_subject" value="New Contact Form Submission - AI Academy"/>
+          <div class="honeypot" aria-hidden="true">
+            <label for="contactGotcha">Leave this field empty</label>
+            <input type="text" id="contactGotcha" name="_gotcha" tabindex="-1" autocomplete="off"/>
+          </div>
           <button type="submit" class="submit-btn">Send Message →</button>
           <p id="formMsg"></p>
         </form>
@@ -287,10 +281,9 @@ h1.page-title{font-size:clamp(2rem,5vw,3.5rem);font-weight:900;letter-spacing:-1
     <li><a href="/">Home</a></li>
     <li><a href="/plans/">Plans</a></li>
     <li><a href="/faqs/">FAQs</a></li>
-    <li><a href="https://www.aiacademyforbeginners.com/join-revenue-1st-community/">Community</a></li>
-    <li><a href="https://www.aiacademyforbeginners.com/ai_blogs/">Blog</a></li>
+    <li><a href="/ai_blogs/">Blog</a></li>
     <li><a href="/contact-us/">Contact</a></li>
-    <li><a href="https://www.howtogeneratenewbusiness.com/revenue-1st-ai-community">Enrol</a></li>
+    <li><a href="/plans/">Enrol</a></li>
   </ul>
   <p>© 2026 AI Academy for Beginners. All rights reserved. Built for the AI generation.</p>
 </footer>
@@ -313,6 +306,8 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeMobileM
 
   form.addEventListener('submit', async function(e){
     e.preventDefault();
+    var gotcha = form.querySelector('[name="_gotcha"]');
+    if(gotcha && gotcha.value) return;
     msg.style.color = 'var(--accent-light)';
     msg.textContent = 'Sending...';
 
