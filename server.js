@@ -39,6 +39,8 @@ const routes = {
   '/cookie-policy/': '/cookie-policy.html',
   '/disclaimer': '/disclaimer.html',
   '/disclaimer/': '/disclaimer.html',
+  '/contract-opportunities': '/contract-opportunities.html',
+  '/contract-opportunities/': '/contract-opportunities.html',
 };
 
 http.createServer((req, res) => {

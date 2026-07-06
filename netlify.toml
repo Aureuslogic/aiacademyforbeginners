@@ -61,6 +61,16 @@
   to = "/disclaimer.html"
   status = 200
 
+[[redirects]]
+  from = "/contract-opportunities"
+  to = "/contract-opportunities.html"
+  status = 200
+
+[[redirects]]
+  from = "/contract-opportunities/"
+  to = "/contract-opportunities.html"
+  status = 200
+
 [[headers]]
   for = "/*"
   [headers.values]
