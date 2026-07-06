@@ -38,7 +38,33 @@ img, video, iframe { max-width: 100%; height: auto; }
   nav[aria-label="Main navigation"] .nav-links { display: none !important; }
   nav.site-nav .hamburger,
   nav#mainNav .hamburger,
-  nav[aria-label="Main navigation"] .hamburger { display: flex !important; }
+  nav[aria-label="Main navigation"] .hamburger {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-shrink: 0 !important;
+    margin-left: auto !important;
+    width: 44px !important;
+    height: 44px !important;
+    padding: 10px !important;
+    border-radius: 12px !important;
+    border: 1px solid rgba(255, 255, 255, 0.35) !important;
+    background: rgba(255, 255, 255, 0.12) !important;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.35) !important;
+  }
+  nav.site-nav .hamburger span,
+  nav#mainNav .hamburger span,
+  nav[aria-label="Main navigation"] .hamburger span,
+  nav .hamburger span {
+    width: 20px !important;
+    height: 2.5px !important;
+    background: #ffffff !important;
+  }
+  nav.site-nav,
+  nav#mainNav,
+  nav[aria-label="Main navigation"] {
+    justify-content: space-between !important;
+  }
 }
 
 /* ── Hero & typography ── */

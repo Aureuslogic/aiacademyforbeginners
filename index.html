@@ -52,6 +52,10 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 /* NAV */
 .urgency-bar{background:linear-gradient(90deg,var(--accent) 0%,#5b21b6 100%);text-align:center;padding:11px 24px;font-size:13.5px;font-weight:600;color:#fff;position:relative;z-index:200}
 .urgency-bar a{color:#fff;text-decoration:underline}
+@media(max-width:900px){
+  /* Put the urgency bar below the fixed nav on mobile */
+  .urgency-bar{margin-top:74px}
+}
 nav{position:fixed;top:20px;left:50%;transform:translateX(-50%);z-index:100;background:rgba(5,8,16,.85);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border:1px solid var(--border-bright);border-radius:60px;padding:10px 24px;display:flex;align-items:center;gap:28px;white-space:nowrap;box-shadow:0 8px 40px rgba(0,0,0,.5),0 0 60px rgba(124,58,237,.2);transition:all .3s}
 .nav-logo{font-family:var(--font);font-weight:800;font-size:14.5px;color:var(--text-primary);text-decoration:none;letter-spacing:-.3px;flex-shrink:0}
 .nav-logo span{color:var(--accent-light)}
@@ -93,15 +97,15 @@ padding-left:14px!important;
 background:rgba(227,154,45,.08);
 border-radius:0 12px 12px 0;
 }
-.hamburger{display:none;flex-direction:column;gap:4px;cursor:pointer;padding:8px;border:none;background:none}
-.hamburger span{display:block;width:22px;height:2px;background:var(--text-primary);border-radius:2px;transition:all .3s}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:10px;border:1px solid rgba(255,255,255,.35);background:rgba(255,255,255,.1);border-radius:12px;flex-shrink:0;align-items:center;justify-content:center;width:44px;height:44px;box-shadow:0 2px 12px rgba(0,0,0,.35)}
+.hamburger span{display:block;width:20px;height:2.5px;background:#fff;border-radius:2px;transition:all .3s}
 .mobile-menu{display:none;position:fixed;inset:0;background:rgba(5,8,16,.98);backdrop-filter:blur(20px);z-index:99;padding:100px 32px 40px;flex-direction:column;gap:12px;overflow-y:auto}
 .mobile-menu.open{display:flex}
 .mobile-menu a{color:var(--text-secondary);text-decoration:none;font-family:var(--font);font-size:18px;font-weight:600;padding:14px 0;border-bottom:1px solid var(--border);display:block}
 .mobile-menu a:hover{color:var(--text-primary)}
 .mobile-menu a.mobile-contract:hover{color:#FFD07A!important;background:rgba(227,154,45,.16)!important}
 .mobile-close{position:absolute;top:24px;right:24px;background:none;border:none;color:var(--text-primary);font-size:28px;cursor:pointer;padding:8px}
-@media(max-width:900px){nav{top:12px;padding:8px 16px;gap:12px;width:calc(100% - 20px);max-width:100%}.nav-links{display:none}.hamburger{display:flex}.nav-cta{display:none}}
+@media(max-width:900px){nav{top:12px;padding:8px 16px;gap:12px;width:calc(100% - 20px);max-width:100%;justify-content:space-between}.nav-links{display:none}.hamburger{display:flex;margin-left:auto}.nav-cta{display:none}.nav-logo{max-width:calc(100% - 56px)}}
 @media(max-width:768px){#pricing [style*="grid-template-columns:1fr 1fr"]{display:grid!important;grid-template-columns:1fr!important;gap:20px!important}}
 
 /* HERO */
