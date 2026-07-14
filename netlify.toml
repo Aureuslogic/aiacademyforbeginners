@@ -1,3 +1,39 @@
+[[redirects]]
+  from = "https://www.aiacademyforbeginners.com/*"
+  to = "https://aiacademyforbeginners.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/7-inspiring-secrets-from-sam-onigbanjo-gtm-architects"
+  to = "/about-sam-onigbanjo/"
+  status = 301
+
+[[redirects]]
+  from = "/7-inspiring-secrets-from-sam-onigbanjo-gtm-architects/"
+  to = "/about-sam-onigbanjo/"
+  status = 301
+
+[[redirects]]
+  from = "/about-sam-onigbanjo"
+  to = "/about-sam-onigbanjo.html"
+  status = 200
+
+[[redirects]]
+  from = "/about-sam-onigbanjo/"
+  to = "/about-sam-onigbanjo.html"
+  status = 200
+
+[[redirects]]
+  from = "/community-impact"
+  to = "/community-impact.html"
+  status = 200
+
+[[redirects]]
+  from = "/community-impact/"
+  to = "/community-impact.html"
+  status = 200
+
 [build]
   publish = "."
 

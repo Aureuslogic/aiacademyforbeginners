@@ -4,8 +4,12 @@
 /faqs /faq.html 200
 /contact-us/ /contact-us.html 200
 /contact-us /contact-us.html 200
-/7-inspiring-secrets-from-sam-onigbanjo-gtm-architects/ /about-sam.html 200
-/7-inspiring-secrets-from-sam-onigbanjo-gtm-architects /about-sam.html 200
+/about-sam-onigbanjo/ /about-sam-onigbanjo.html 200
+/about-sam-onigbanjo /about-sam-onigbanjo.html 200
+/community-impact/ /community-impact.html 200
+/community-impact /community-impact.html 200
+/7-inspiring-secrets-from-sam-onigbanjo-gtm-architects/ /about-sam-onigbanjo/ 301
+/7-inspiring-secrets-from-sam-onigbanjo-gtm-architects /about-sam-onigbanjo/ 301
 /ai_blogs/ /ai_blogs.html 200
 /ai_blogs /ai_blogs.html 200
 /terms-and-conditions/ /terms-and-conditions.html 200
@@ -20,3 +24,14 @@
 /disclaimer /disclaimer.html 200
 /contract-opportunities/ /contract-opportunities.html 200
 /contract-opportunities /contract-opportunities.html 200
+# Legacy course pages — Action B pending Sam confirmation of active offers
+/ai-for-accountants/ /contact-us/ 301
+/ai-for-accountants /contact-us/ 301
+/ai-for-productivity-in-schools/ /contact-us/ 301
+/ai-for-productivity-in-schools /contact-us/ 301
+/ai-in-marketing/ /contact-us/ 301
+/ai-in-marketing /contact-us/ 301
+/a-i-for-your-business-success/ /contact-us/ 301
+/a-i-for-your-business-success /contact-us/ 301
+/land-that-job-with-ai-and-a-tailored-cv/ /contact-us/ 301
+/land-that-job-with-ai-and-a-tailored-cv /contact-us/ 301

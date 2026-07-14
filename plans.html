@@ -7,17 +7,17 @@
 <link rel="apple-touch-icon" href="/favicon.svg"/>
 <link rel="stylesheet" href="/mobile.css"/>
 <title>Plans & Pricing | AI Academy for Beginners</title>
-<meta name="description" content="Three AI training plans built for business: £397, £550 and £950/month. Marketing, web development, productivity, web apps, Voice AI and personal coaching. Join 50,000+ learners."/>
+<meta name="description" content="AI training plans from £19/month, plus Core £397, Growth £550 and Elite £950. Marketing, web development, productivity, web apps, Voice AI and personal coaching. Join 50,000+ member community."/>
 <meta name="robots" content="index, follow"/>
-<link rel="canonical" href="https://www.aiacademyforbeginners.com/plans/"/>
+<link rel="canonical" href="https://aiacademyforbeginners.com/plans/"/>
 <meta property="og:type" content="website"/>
-<meta property="og:url" content="https://www.aiacademyforbeginners.com/plans/"/>
+<meta property="og:url" content="https://aiacademyforbeginners.com/plans/"/>
 <meta property="og:title" content="Plans & Pricing | AI Academy for Beginners"/>
-<meta property="og:description" content="Choose your AI business skills plan. From £397/month for core AI mastery to £950/month for elite 1-to-1 coaching with Sam. 50,000+ learners. No coding required."/>
+<meta property="og:description" content="Choose your AI training plan. From £19/month starter access to £950/month elite coaching with Sam. 50,000+ member community. No coding required."/>
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:url" content="https://www.aiacademyforbeginners.com/plans/"/>
+<meta name="twitter:url" content="https://aiacademyforbeginners.com/plans/"/>
 <meta name="twitter:title" content="Plans & Pricing | AI Academy for Beginners"/>
-<meta name="twitter:description" content="Choose your AI business skills plan. From £397/month for core AI mastery to £950/month for elite 1-to-1 coaching with Sam. 50,000+ learners. No coding required."/>
+<meta name="twitter:description" content="Choose your AI training plan. From £19/month starter access to £950/month elite coaching with Sam. 50,000+ member community. No coding required."/>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is included in the £397 plan?","acceptedAnswer":{"@type":"Answer","text":"The £397/month Core Business plan covers all 7 AI modules including ChatGPT, Claude and Gemini for productivity, AI marketing, web app building, automations and workflows, AI governance and Voice Agents."}},{"@type":"Question","name":"What extra do I get on the £550 plan?","acceptedAnswer":{"@type":"Answer","text":"The £550/month Growth plan adds advanced AI marketing systems, full web development with AI, high-productivity automation stacks, web app building deep-dives, and bi-weekly live coaching sessions."}},{"@type":"Question","name":"What is included in the £950 Elite plan?","acceptedAnswer":{"@type":"Answer","text":"The £950/month Elite plan includes everything in Growth plus monthly 1-to-1 sessions directly with Sam, bespoke AI strategy for your business, priority implementation support and a dedicated business AI roadmap."}}]}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
@@ -72,10 +72,12 @@ nav{position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-co
 .trust-item{display:flex;align-items:center;gap:7px;font-size:13px;color:var(--text-muted);font-weight:600}
 .trust-item span{color:var(--accent3)}
 
-/* PLAN CARDS — 3 column */
-.plans-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;margin-bottom:72px;align-items:start}
-@media(max-width:960px){.plans-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:640px){.plans-grid{grid-template-columns:1fr}}
+/* PLAN CARDS — 4 plans in 2×2 */
+.plans-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:72px;align-items:start}
+@media(max-width:860px){.plans-grid{grid-template-columns:1fr}}
+.plan-card.starter{border-color:rgba(16,185,129,.35)}
+.plan-card.starter:hover{border-color:rgba(16,185,129,.65);box-shadow:0 20px 60px rgba(16,185,129,.12)}
+.plan-btn.starter{background:linear-gradient(135deg,var(--accent3),#059669);color:#fff}
 
 .plan-card{background:var(--surface);border:1px solid var(--border);border-radius:28px;padding:40px 32px;position:relative;overflow:hidden;transition:border-color .3s,transform .3s,box-shadow .3s}
 .plan-card:hover{transform:translateY(-5px);box-shadow:0 20px 60px rgba(0,0,0,.4)}
@@ -195,10 +197,10 @@ nav{position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-co
 <div class="mobile-menu" id="mobileMenu">
   <button class="mobile-close" onclick="closeMobileMenu()">✕</button>
   <a href="/">🏠 Home</a>
-  <a href="/7-inspiring-secrets-from-sam-onigbanjo-gtm-architects/">👤 About Sam</a>
-  <a href="https://www.aiacademyforbeginners.com/ai-for-accountants/">📊 AI for Accountants</a>
-  <a href="https://www.aiacademyforbeginners.com/ai-in-marketing/">📣 AI in Marketing</a>
-  <a href="https://www.aiacademyforbeginners.com/a-i-for-your-business-success/">🚀 AI for Business</a>
+  <a href="/about-sam-onigbanjo/">👤 About Sam</a>
+  <a href="/contact-us/">📊 AI for Accountants</a>
+  <a href="/contact-us/">📣 AI in Marketing</a>
+  <a href="/contact-us/">🚀 AI for Business</a>
   <a href="/plans/" style="color:var(--accent-light)">📋 Plans</a>
   <a href="/faqs/">❓ FAQs</a>
   <a href="/ai_blogs/">✍️ Blog</a>
@@ -220,14 +222,15 @@ nav{position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-co
 </nav>
 
 <main>
+<p style="text-align:center;font-size:0.85rem;color:var(--text-muted);padding:12px 24px 0">Last reviewed: 13 July 2026</p>
 
 <!-- HERO -->
 <div class="page-hero">
   <span class="section-label">Pricing &amp; Plans</span>
   <h1 class="page-title">AI skills that build<br/><span class="gradient-text">real business results.</span></h1>
-  <p class="page-sub">Three plans built around what actually matters in 2026 — marketing that converts, websites that work, productivity that compounds, and automation that scales. No coding. No jargon. Just results.</p>
+  <p class="page-sub">Four plans built around what actually matters in 2026 — start from £19/month for pre-recorded training, or go deeper with Core, Growth and Elite. No coding. No jargon. Just results.</p>
   <div class="trust-row">
-    <div class="trust-item"><span>✓</span> 50,000+ learners</div>
+    <div class="trust-item"><span>✓</span> 50,000+ member community</div>
     <div class="trust-item"><span>✓</span> No coding required</div>
     <div class="trust-item"><span>✓</span> 30-day guarantee</div>
     <div class="trust-item"><span>✓</span> Cancel anytime</div>
@@ -238,6 +241,34 @@ nav{position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-co
 
 <!-- PRICING CARDS -->
 <div class="plans-grid">
+
+  <!-- STARTER £19 -->
+  <div class="plan-card starter fade-in">
+    <div class="plan-tier">Starter</div>
+    <div class="plan-name">AI Training Access</div>
+    <p class="plan-desc">The entry plan for beginners who want practical AI training at their own pace — pre-recorded sessions, monthly live Q&amp;A, and community access from £19/month.</p>
+    <div class="price-block">
+      <div class="price"><sup>£</sup>19<span class="price-cadence">/month</span></div>
+      <div class="price-note">Cancel anytime · Instant access · No lock-in</div>
+    </div>
+    <ul class="features">
+      <li class="feat-section">What’s included</li>
+      <li><span class="check">✓</span><span>Full library of <strong>pre-recorded AI training sessions</strong></span></li>
+      <li><span class="check">✓</span><span>Learn at your own pace — ChatGPT, Claude, Gemini and practical workflows</span></li>
+      <li><span class="check">✓</span><span><strong>1 live group Q&amp;A</strong> with Sam each month</span></li>
+      <li><span class="check">✓</span><span>Access to the <strong>50,000+ member community</strong></span></li>
+      <li><span class="check">✓</span><span>Monthly content updates as tools evolve</span></li>
+      <li class="feat-section">What’s not included</li>
+      <li><span class="check" style="opacity:.5">—</span><span>Not the full structured <strong>7-module Core programme</strong> (£397)</span></li>
+      <li><span class="check" style="opacity:.5">—</span><span>No bi-weekly coaching, certificate, or 1-to-1 with Sam</span></li>
+      <li class="feat-section">Access &amp; refunds</li>
+      <li><span class="check">✓</span><span>Instant access after checkout</span></li>
+      <li><span class="check">✓</span><span>Cancel anytime — no lock-in</span></li>
+      <li><span class="check">✓</span><span>30-day satisfaction guarantee — see refund policy</span></li>
+    </ul>
+    <a href="https://buy.stripe.com/6oU28sdk3b565WF9gxe3e0I" class="plan-btn starter" target="_blank" rel="noopener noreferrer">Start from £19/month →</a>
+    <p class="plan-small">Secure enrolment · Instant access</p>
+  </div>
 
   <!-- CORE £397 -->
   <div class="plan-card fade-in">
@@ -447,7 +478,7 @@ nav{position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-co
   <div class="guarantee-icon">🛡️</div>
   <div>
     <h3>30-Day Money-Back Guarantee — All Plans</h3>
-    <p>Every plan comes with a full 30-day guarantee. Go through the first two modules, implement what you learn, and if you genuinely feel the program has not delivered value — email hello@aiacademyforbeginners.com within 30 days for a full refund, no awkward questions asked. We are confident enough in this training to back it fully. Over 50,000 learners already have.</p>
+    <p>Every plan comes with a full 30-day guarantee. Go through the first two modules, implement what you learn, and if you genuinely feel the program has not delivered value — email hello@aiacademyforbeginners.com within 30 days for a full refund, no awkward questions asked. We are confident enough in this training to back it fully. The programme is supported by a global AI learning community of more than 50,000 members.</p>
   </div>
 </div>
 
@@ -481,7 +512,8 @@ nav{position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-co
   <h2 style="font-size:1.5rem;font-weight:800">Questions about <span class="gradient-text">plans &amp; pricing</span></h2>
 </div>
 <div class="faq-mini">
-  <div class="faq-mini-item"><button class="faq-mini-q" onclick="togglePlanFAQ(this)">What is the difference between Core, Growth and Elite?<span class="icon">+</span></button><div class="faq-mini-a"><div class="faq-mini-a-inner">Core (£397/month) gives you all 7 AI modules including AI marketing, web apps, automations, productivity and Voice Agents — the complete foundation. Growth (£550/month) adds advanced marketing systems, full web development deep-dives, high-productivity automation stacks, bi-weekly coaching, and VIP community access. Elite (£950/month) goes beyond a course — it is a direct relationship with Sam including monthly 1-to-1 sessions, a bespoke AI strategy for your specific business, a 90-day roadmap, and priority implementation support.</div></div></div>
+  <div class="faq-mini-item"><button class="faq-mini-q" onclick="togglePlanFAQ(this)">What is included in the £19 Starter plan?<span class="icon">+</span></button><div class="faq-mini-a"><div class="faq-mini-a-inner">The £19/month Starter plan (AI Training Access) gives you the pre-recorded AI training library to work through at your own pace, one live group Q&amp;A with Sam each month, community access, and monthly content updates. It does not include the full structured 7-module Core programme, bi-weekly coaching, certificate, or 1-to-1 sessions with Sam. Cancel anytime. 30-day satisfaction guarantee applies — see the refund policy.</div></div></div>
+  <div class="faq-mini-item"><button class="faq-mini-q" onclick="togglePlanFAQ(this)">What is the difference between Starter, Core, Growth and Elite?<span class="icon">+</span></button><div class="faq-mini-a"><div class="faq-mini-a-inner">Starter (£19/month) is entry-level access: pre-recorded training, monthly group Q&amp;A and community. Core (£397/month) gives you all 7 AI modules including AI marketing, web apps, automations, productivity and Voice Agents — the complete foundation. Growth (£550/month) adds advanced marketing systems, full web development deep-dives, high-productivity automation stacks, bi-weekly coaching, and VIP community access. Elite (£950/month) goes beyond a course — it is a direct relationship with Sam including monthly 1-to-1 sessions, a bespoke AI strategy for your specific business, a 90-day roadmap, and priority implementation support.</div></div></div>
 
   <div class="faq-mini-item"><button class="faq-mini-q" onclick="togglePlanFAQ(this)">Can I start on Core and upgrade to Growth or Elite later?<span class="icon">+</span></button><div class="faq-mini-a"><div class="faq-mini-a-inner">Yes — you can upgrade at any time. Contact hello@aiacademyforbeginners.com and we will sort it immediately. You only pay the difference going forward. Many learners start on Core to get the foundation right, then move to Growth or Elite once they are ready to scale.</div></div></div>
 
@@ -501,8 +533,9 @@ nav{position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-co
   <div style="position:absolute;inset:0;background:radial-gradient(ellipse 70% 80% at 50% 50%,rgba(124,58,237,.1) 0%,transparent 70%);pointer-events:none"></div>
   <span class="section-label" style="position:relative">Start Today</span>
   <h2 style="font-size:clamp(1.6rem,4vw,2.6rem);font-weight:900;letter-spacing:-1px;margin:16px 0 14px;position:relative">The AI advantage is real.<br/><span class="gradient-text">Choose your level.</span></h2>
-  <p style="color:var(--text-secondary);margin-bottom:40px;font-size:1rem;max-width:520px;margin-left:auto;margin-right:auto;position:relative;line-height:1.8">50,000+ professionals have already used these skills to save time, grow revenue, and build businesses that work smarter. The question is which level is right for where you want to go.</p>
+  <p style="color:var(--text-secondary);margin-bottom:40px;font-size:1rem;max-width:520px;margin-left:auto;margin-right:auto;position:relative;line-height:1.8">Join a global community of more than 50,000 members learning how to use AI practically. The question is which level is right for where you want to go.</p>
   <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;position:relative">
+    <a href="https://buy.stripe.com/6oU28sdk3b565WF9gxe3e0I" target="_blank" rel="noopener noreferrer" style="background:linear-gradient(135deg,var(--accent3),#059669);color:#fff;padding:15px 28px;border-radius:50px;font-weight:700;font-size:14px;text-decoration:none">Starter — £19/month →</a>
     <a href="https://buy.stripe.com/dRm28q7fIbrsarOdBr7ok1t" style="background:linear-gradient(135deg,var(--accent2),#0891b2);color:#fff;padding:15px 28px;border-radius:50px;font-weight:700;font-size:14px;text-decoration:none">AI GTM — £397/month →</a>
     <a href="https://buy.stripe.com/8x28wOgQifHI8jGgND7ok1s" style="background:linear-gradient(135deg,var(--accent),#5b21b6);color:#fff;padding:15px 28px;border-radius:50px;font-weight:700;font-size:14px;text-decoration:none">Growth Accelerator — £550/month →</a>
     <a href="https://buy.stripe.com/aFa4gy9nQeDEdE040R7ok1r" style="background:linear-gradient(135deg,var(--gold),#d97706);color:#000;padding:15px 28px;border-radius:50px;font-weight:800;font-size:14px;text-decoration:none">AI Scale — £950/month →</a>
@@ -516,7 +549,7 @@ nav{position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-co
 <footer class="simple-footer">
   <ul class="footer-nav">
     <li><a href="/">Home</a></li>
-    <li><a href="/7-inspiring-secrets-from-sam-onigbanjo-gtm-architects/">About Sam</a></li>
+    <li><a href="/about-sam-onigbanjo/">About Sam</a></li>
     <li><a href="/plans/">Plans</a></li>
     <li><a href="/faqs/">FAQs</a></li>
     <li><a href="/ai_blogs/">Blog</a></li>

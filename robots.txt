@@ -1,5 +1,8 @@
-# AI Academy for Beginners — allow all crawlers including AI search bots
+# AI Academy for Beginners — allow crawlers including ChatGPT Search
 User-agent: *
+Allow: /
+
+User-agent: OAI-SearchBot
 Allow: /
 
 User-agent: GPTBot
@@ -14,4 +17,4 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-Sitemap: https://www.aiacademyforbeginners.com/sitemap.xml
+Sitemap: https://aiacademyforbeginners.com/sitemap.xml

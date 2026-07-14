@@ -41,10 +41,33 @@ const routes = {
   '/disclaimer/': '/disclaimer.html',
   '/contract-opportunities': '/contract-opportunities.html',
   '/contract-opportunities/': '/contract-opportunities.html',
+  '/about-sam-onigbanjo': '/about-sam-onigbanjo.html',
+  '/about-sam-onigbanjo/': '/about-sam-onigbanjo.html',
+  '/community-impact': '/community-impact.html',
+  '/community-impact/': '/community-impact.html',
+};
+
+const redirects301 = {
+  '/7-inspiring-secrets-from-sam-onigbanjo-gtm-architects': '/about-sam-onigbanjo/',
+  '/7-inspiring-secrets-from-sam-onigbanjo-gtm-architects/': '/about-sam-onigbanjo/',
+  '/ai-for-accountants': '/contact-us/',
+  '/ai-for-accountants/': '/contact-us/',
+  '/ai-for-productivity-in-schools': '/contact-us/',
+  '/ai-for-productivity-in-schools/': '/contact-us/',
+  '/ai-in-marketing': '/contact-us/',
+  '/ai-in-marketing/': '/contact-us/',
+  '/a-i-for-your-business-success': '/contact-us/',
+  '/a-i-for-your-business-success/': '/contact-us/',
+  '/land-that-job-with-ai-and-a-tailored-cv': '/contact-us/',
+  '/land-that-job-with-ai-and-a-tailored-cv/': '/contact-us/',
 };
 
 http.createServer((req, res) => {
   const url = decodeURIComponent(req.url.split('?')[0]);
+  if (redirects301[url]) {
+    res.writeHead(301, { Location: redirects301[url] });
+    return res.end();
+  }
   const file = routes[url] || url;
   const relative = file.startsWith('/') ? file.slice(1) : file;
   const filePath = path.join(root, relative);
