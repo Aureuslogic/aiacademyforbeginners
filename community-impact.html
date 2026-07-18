@@ -114,7 +114,7 @@ border-radius:0 12px 12px 0;
 .pill-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(124,58,237,.15);border:1px solid rgba(124,58,237,.35);border-radius:40px;padding:7px 18px;font-size:13px;font-weight:600;color:var(--accent-light);margin-bottom:32px;letter-spacing:.3px}
 .dot{width:7px;height:7px;border-radius:50%;background:var(--accent3);animation:pulse 2s infinite}
 @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.6;transform:scale(1.4)}}
-h1{font-family:var(--font);font-size:clamp(34px,6vw,70px);font-weight:900;line-height:1.08;letter-spacing:-2.5px;margin-bottom:24px}
+h1{font-family:var(--font);font-size:clamp(34px,6vw,70px);font-weight:900;line-height:1.08;letter-spacing:-0.5px;margin-bottom:24px}
 .gradient-text{background:linear-gradient(135deg,#a78bfa 0%,#06b6d4 50%,#10b981 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .gradient-text-warm{background:linear-gradient(135deg,#f59e0b 0%,#ef4444 50%,#a78bfa 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .hero-sub{font-size:clamp(16px,2.2vw,20px);color:var(--text-secondary);max-width:640px;margin:0 auto 40px;line-height:1.7}
@@ -145,7 +145,7 @@ section[id]{scroll-margin-top:88px}
 section{position:relative;z-index:1;padding:96px 24px}
 .container{max-width:1160px;margin:0 auto}
 .section-label{display:inline-block;font-size:11.5px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--accent-light);margin-bottom:14px}
-.section-title{font-family:var(--font);font-size:clamp(26px,4vw,48px);font-weight:800;letter-spacing:-1.5px;line-height:1.12;margin-bottom:14px}
+.section-title{font-family:var(--font);font-size:clamp(26px,4vw,48px);font-weight:800;letter-spacing:-0.4px;line-height:1.2;margin-bottom:14px;word-spacing:0.02em}
 .section-sub{font-size:17px;color:var(--text-secondary);max-width:620px;line-height:1.75;margin-bottom:52px}
 .divider{height:1px;background:linear-gradient(90deg,transparent 0%,var(--border-bright) 50%,transparent 100%);margin:0 auto;max-width:1160px}
 
@@ -263,7 +263,7 @@ section{position:relative;z-index:1;padding:96px 24px}
 .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
 @media(max-width:780px){.stats-grid{grid-template-columns:repeat(2,1fr)}}
 .stat-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:32px 20px;text-align:center;backdrop-filter:blur(12px)}
-.stat-num{font-family:var(--font);font-size:40px;font-weight:900;letter-spacing:-2px;background:linear-gradient(135deg,#a78bfa 0%,#06b6d4 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1;margin-bottom:7px}
+.stat-num{font-family:var(--font);font-size:40px;font-weight:900;letter-spacing:-0.5px;background:linear-gradient(135deg,#a78bfa 0%,#06b6d4 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1;margin-bottom:7px}
 .stat-label{font-size:13.5px;color:var(--text-secondary)}
 
 /* AUDIENCE */
@@ -295,7 +295,7 @@ section{position:relative;z-index:1;padding:96px 24px}
 .pricing-card{max-width:500px;margin:0 auto;background:linear-gradient(135deg,rgba(124,58,237,.2) 0%,rgba(6,182,212,.1) 100%);border:1px solid rgba(124,58,237,.4);border-radius:28px;padding:50px 44px;text-align:center;position:relative;overflow:hidden}
 .pricing-card::before{content:'';position:absolute;top:-60px;right:-60px;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,rgba(124,58,237,.3) 0%,transparent 70%);pointer-events:none}
 .best-value{display:inline-block;background:linear-gradient(135deg,var(--gold) 0%,#f97316 100%);color:#000;font-size:11px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;padding:5px 14px;border-radius:40px;margin-bottom:22px}
-.price{font-family:var(--font);font-size:68px;font-weight:900;letter-spacing:-3px;line-height:1;margin-bottom:4px}
+.price{font-family:var(--font);font-size:68px;font-weight:900;letter-spacing:-0.8px;line-height:1;margin-bottom:4px}
 .price sup{font-size:26px;font-weight:600;vertical-align:top;margin-top:14px;letter-spacing:0}
 .price-note{font-size:13.5px;color:var(--text-secondary);margin-bottom:28px}
 .pricing-features{list-style:none;text-align:left;margin-bottom:36px;display:flex;flex-direction:column;gap:12px}
@@ -324,7 +324,7 @@ section{position:relative;z-index:1;padding:96px 24px}
 /* CTA SECTION */
 .cta-section{background:linear-gradient(135deg,rgba(124,58,237,.2) 0%,rgba(6,182,212,.1) 50%,rgba(16,185,129,.08) 100%);border:1px solid rgba(124,58,237,.25);border-radius:32px;padding:72px 44px;text-align:center;position:relative;overflow:hidden}
 .cta-section::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 50% 50%,rgba(124,58,237,.15) 0%,transparent 70%);pointer-events:none}
-.cta-section h2{font-family:var(--font);font-size:clamp(26px,4vw,46px);font-weight:900;letter-spacing:-1.5px;margin-bottom:14px}
+.cta-section h2{font-family:var(--font);font-size:clamp(26px,4vw,46px);font-weight:900;letter-spacing:-0.4px;margin-bottom:14px;word-spacing:0.02em}
 .cta-section p{font-size:17px;color:var(--text-secondary);margin-bottom:36px;max-width:540px;margin-left:auto;margin-right:auto}
 
 /* INTENT TAGS */
@@ -458,34 +458,16 @@ footer{position:relative;z-index:1;border-top:1px solid var(--border);padding:44
     </div>
 
     <h2 class="section-title" style="font-size:1.8rem;margin-bottom:8px">Impact statistics</h2>
-    <p class="section-sub" style="margin-bottom:8px">Each metric is kept separate. Numbers appear only where evidence is available.</p>
     <div class="impact-grid">
       <div class="metric fade-in"><div class="stat-num" style="font-size:1.6rem;font-weight:800;color:var(--accent-light)">53,000+</div><div class="label">Community members<br/><span style="font-size:0.75rem">Verified 14 July 2026</span></div></div>
-      <div class="metric fade-in"><div class="pending">Evidence pending</div><div class="label">Registered programme learners</div></div>
-      <div class="metric fade-in"><div class="pending">Evidence pending</div><div class="label">Live workshop attendees</div></div>
-      <div class="metric fade-in"><div class="pending">Evidence pending</div><div class="label">Certificates issued</div></div>
-      <div class="metric fade-in"><div class="pending">Evidence pending</div><div class="label">Countries represented</div></div>
-      <div class="metric fade-in"><div class="pending">Evidence pending</div><div class="label">Organisations supported</div></div>
-      <div class="metric fade-in"><div class="pending">Evidence pending</div><div class="label">Google reviews</div></div>
-      <div class="metric fade-in"><div class="pending">Evidence pending</div><div class="label">Learner satisfaction</div></div>
     </div>
 
     <div class="impact-card fade-in" style="margin:32px 0">
       <h3>Reviews</h3>
-      <p style="color:var(--text-secondary);line-height:1.75;margin-bottom:16px">Read feedback from our learners and community. Leave a Google review if you have attended a course, webinar, workshop or coaching session. The public Google Maps profile URL will be published here once supplied and approved.</p>
+      <p style="color:var(--text-secondary);line-height:1.75;margin-bottom:16px">Read feedback from our learners and community. Leave a Google review if you have attended a course, webinar, workshop or coaching session.</p>
       <div class="btn-row">
         <a class="primary" href="https://g.page/r/Ce_YNr-rkVQMEBM/review" target="_blank" rel="noopener noreferrer">Read and Leave Google Reviews</a>
       </div>
-    </div>
-
-    <div class="impact-card fade-in" style="margin-bottom:32px">
-      <h3>Named testimonials</h3>
-      <p style="color:var(--text-muted);line-height:1.75">Named testimonials with permission, programme/event, and participation date will be published in this section as they are confirmed.</p>
-    </div>
-
-    <div class="impact-card fade-in">
-      <h3>Case studies</h3>
-      <p style="color:var(--text-muted);line-height:1.75">Each case study will include learner or organisation name, industry, initial problem, AI training received, what was implemented, measurable result, date, and permission status. None are published here until evidence and permission are confirmed.</p>
     </div>
   </div>
 

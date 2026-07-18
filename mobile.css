@@ -84,7 +84,7 @@ img, video, iframe { max-width: 100%; height: auto; }
 @media (max-width: 768px) {
   .hero { min-height: auto !important; padding: 110px 16px 64px !important; width: 100% !important; }
   .hero-inner { padding: 0 4px; width: 100% !important; max-width: 100% !important; margin: 0 auto !important; }
-  h1, .page-title { letter-spacing: -1.2px !important; max-width: 100% !important; overflow-wrap: anywhere; }
+  h1, .page-title { letter-spacing: -0.2px !important; max-width: 100% !important; overflow-wrap: break-word; word-spacing: 0.04em; }
   .hero-sub, .page-sub { font-size: 15px !important; padding: 0 4px; }
   .hero-ctas { flex-direction: column !important; align-items: stretch !important; gap: 10px !important; }
   .hero-ctas .btn-primary, .hero-ctas .btn-secondary,
@@ -94,7 +94,7 @@ img, video, iframe { max-width: 100%; height: auto; }
   section { padding-left: 16px !important; padding-right: 16px !important; }
   .container { padding-left: 16px !important; padding-right: 16px !important; }
   .section-sub { margin-bottom: 32px !important; font-size: 15px !important; max-width: 100% !important; }
-  .section-title { max-width: 100% !important; }
+  .section-title, .cta-section h2 { max-width: 100% !important; letter-spacing: -0.2px !important; word-spacing: 0.04em; }
   .container { width: 100% !important; max-width: 100% !important; }
   .page-hero { padding: 88px 16px 48px !important; }
 }
@@ -195,4 +195,13 @@ img, video, iframe { max-width: 100%; height: auto; }
 /* ── VAPI widget — keep off nav on small screens ── */
 @media (max-width: 480px) {
   vapi-widget { --vapi-widget-width: 100vw; }
+}
+
+/* Prevent joined-word headings on small screens */
+@media (max-width: 768px) {
+  h1, h2, .section-title, .page-title, .cta-section h2, .hero-name {
+    letter-spacing: -0.2px !important;
+    word-spacing: 0.05em !important;
+    overflow-wrap: break-word !important;
+  }
 }
