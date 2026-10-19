@@ -333,6 +333,7 @@ section{position:relative;z-index:1;padding:96px 24px}
 /* VIDEO */
 .video-wrap{position:relative;width:100%;padding-bottom:56.25%;border-radius:22px;overflow:hidden;border:1px solid var(--border-bright);box-shadow:0 24px 80px rgba(0,0,0,.5),0 0 0 1px rgba(124,58,237,.2);background:rgba(255,255,255,.03)}
 .video-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+.video-wrap.short{width:min(380px,100%);max-width:380px;margin:0 auto;padding-bottom:0;aspect-ratio:9/16;height:auto}
 .video-placeholder{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;background:rgba(10,12,24,.6)}
 .video-placeholder .play-btn{width:72px;height:72px;border-radius:50%;background:var(--accent);display:flex;align-items:center;justify-content:center;font-size:26px;color:#fff;cursor:pointer;box-shadow:0 0 40px rgba(124,58,237,.5)}
 .video-placeholder p{font-size:14px;color:var(--text-secondary)}
@@ -477,6 +478,39 @@ footer{position:relative;z-index:1;border-top:1px solid var(--border);padding:44
   </div>
 </div>
 
+<!-- VIDEO SLOT 1 -->
+<section aria-labelledby="video1-heading" style="padding:80px 24px">
+  <div class="container" style="text-align:center">
+    <span class="section-label">See It In Action</span>
+    <h2 id="video1-heading" class="section-title">Watch how fast AI<br/><span class="gradient-text">works for you</span></h2>
+    <p class="section-sub" style="margin:0 auto 36px">A taste of what you get inside — straight into real outcomes, zero fluff.</p>
+    <div style="max-width:820px;margin:0 auto">
+      <div class="video-wrap short">
+        <iframe src="https://www.youtube.com/embed/2TxZwkkP6rE?rel=0&modestbranding=1&color=white" title="AI Academy Free Training Preview" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      </div>
+
+      <div class="video-enrol-box fade-in">
+        <h3>Ready to enrol?</h3>
+        <p class="video-enrol-sub">Join a global AI learning community of more than 50,000 members and build practical skills in ChatGPT, Claude, Gemini, Voice AI and automation. All 7 modules, live Q&amp;A, and community access — from £19/month.</p>
+        <form class="video-enrol-form" action="https://formspree.io/f/meewwqvk" method="POST" data-enroll-url="https://coaching.aiacademyforbeginners.com/revenue-1st-ai-community" onsubmit="handleEnrolSubmit(event)">
+          <input type="email" name="email" placeholder="Your email address" required autocomplete="email"/>
+          <input type="hidden" name="topic" value="Enrollment (below video)"/>
+          <input type="hidden" name="_subject" value="New enrollment - AI Academy"/>
+          <div class="honeypot" style="position:absolute;left:-9999px;height:0;overflow:hidden" tabindex="-1">
+            <input type="text" id="videoEnrolGotcha" name="_gotcha" tabindex="-1" autocomplete="off" aria-label="Do not fill"/>
+          </div>
+          <button type="submit" class="video-enrol-btn">Enrol Now — from £19/month →</button>
+        </form>
+        <p class="video-enrol-msg" aria-live="polite"></p>
+        <p class="video-enrol-fine">Instant access · Cancel anytime · No coding required</p>
+        <p class="video-enrol-or">Prefer the full programme? <a href="/plans/">View all plans from £397 →</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
 <!-- WHAT IS IT -->
 <section id="about" aria-labelledby="about-heading">
   <div class="container">
@@ -526,39 +560,6 @@ footer{position:relative;z-index:1;border-top:1px solid var(--border);padding:44
         <h3>Save Time &amp; Grow Revenue</h3>
         <p>Deploy AI tools that work 24 hours a day — generating leads, answering customers, writing content, and running your business while you sleep.</p>
       </article>
-    </div>
-  </div>
-</section>
-
-<div class="divider"></div>
-
-<!-- VIDEO SLOT 1 -->
-<section aria-labelledby="video1-heading" style="padding:80px 24px">
-  <div class="container" style="text-align:center">
-    <span class="section-label">See It In Action</span>
-    <h2 id="video1-heading" class="section-title">Watch how fast AI<br/><span class="gradient-text">works for you</span></h2>
-    <p class="section-sub" style="margin:0 auto 36px">A taste of what you get inside — straight into real outcomes, zero fluff.</p>
-    <div style="max-width:820px;margin:0 auto">
-      <div class="video-wrap">
-        <iframe src="https://www.youtube.com/embed/DZ5-BkYFNss?rel=0&modestbranding=1&color=white" title="AI Academy Free Training Preview" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen loading="lazy"></iframe>
-      </div>
-
-      <div class="video-enrol-box fade-in">
-        <h3>Ready to enrol?</h3>
-        <p class="video-enrol-sub">Join a global AI learning community of more than 50,000 members and build practical skills in ChatGPT, Claude, Gemini, Voice AI and automation. All 7 modules, live Q&amp;A, and community access — from £19/month.</p>
-        <form class="video-enrol-form" action="https://formspree.io/f/meewwqvk" method="POST" data-enroll-url="https://coaching.aiacademyforbeginners.com/revenue-1st-ai-community" onsubmit="handleEnrolSubmit(event)">
-          <input type="email" name="email" placeholder="Your email address" required autocomplete="email"/>
-          <input type="hidden" name="topic" value="Enrollment (below video)"/>
-          <input type="hidden" name="_subject" value="New enrollment - AI Academy"/>
-          <div class="honeypot" style="position:absolute;left:-9999px;height:0;overflow:hidden" tabindex="-1">
-            <input type="text" id="videoEnrolGotcha" name="_gotcha" tabindex="-1" autocomplete="off" aria-label="Do not fill"/>
-          </div>
-          <button type="submit" class="video-enrol-btn">Enrol Now — from £19/month →</button>
-        </form>
-        <p class="video-enrol-msg" aria-live="polite"></p>
-        <p class="video-enrol-fine">Instant access · Cancel anytime · No coding required</p>
-        <p class="video-enrol-or">Prefer the full programme? <a href="/plans/">View all plans from £397 →</a></p>
-      </div>
     </div>
   </div>
 </section>
