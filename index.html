@@ -324,7 +324,11 @@ details.menu{border:0}
 .tier .price-s{font:700 1.4rem/1 var(--display)}
 .tier .price-s small{font:500 .9rem/1 var(--body);color:var(--muted)}
 .tier{align-content:start}
-.tier-btn{justify-self:start;margin-top:var(--s2);padding:.8rem 1.1rem;font-size:.95rem}
+.tier-btn{margin-top:var(--s2)}
+.plan-btn{justify-content:center;width:100%;padding:1.1rem 1.4rem;font-size:1.05rem;font-weight:700;box-shadow:0 10px 28px -10px color-mix(in srgb,var(--gold) 70%,transparent),0 0 0 1px color-mix(in srgb,var(--gold) 60%,transparent)}
+.plan-btn::after{content:"\2192";transition:transform .15s ease}
+.plan-btn:hover{transform:translateY(-2px);filter:brightness(1.05)}
+.plan-btn:hover::after{transform:translateX(3px)}
 .guarantee{margin-top:var(--s4);padding:var(--s4);border:1px dashed var(--line);border-radius:12px;color:var(--muted);max-width:760px}
 .guarantee b{color:var(--fg)}
 @media (max-width:720px){.tiers{grid-template-columns:1fr}}
@@ -1187,7 +1191,7 @@ details.menu{border:0}
             <li>Month one bonus: your ideal customer in ten minutes, and lifetime value against acquisition cost without jargon</li>
             <li>Cancel anytime from your account</li>
           </ul>
-          <a class="btn btn-gold" href="https://coaching.aiacademyforbeginners.com/revenue-1st-ai-community">Join for £19 a month</a>
+          <a class="btn btn-gold plan-btn" href="https://coaching.aiacademyforbeginners.com/revenue-1st-ai-community">Join for £19 a month</a>
           <p class="small">Founding member price: the first 300 members keep £19 for as long as they stay active.</p>
         </article>
         <article class="plan">
@@ -1200,13 +1204,13 @@ details.menu{border:0}
             <li>One live group Q&amp;A with Sam every month</li>
             <li>Community access</li>
           </ul>
-          <a class="btn btn-ghost" href="https://buy.stripe.com/dRm28q7fIbrsarOdBr7ok1t">Join Core for £397 a month</a>
+          <a class="btn btn-gold plan-btn" href="https://buy.stripe.com/dRm28q7fIbrsarOdBr7ok1t">Join Core for £397 a month</a>
           <p class="small">Monthly. Upgrade anytime and pay only the difference.</p>
         </article>
       </div>
       <div class="tiers">
-        <div class="tier"><p class="label">Growth</p><p class="price-s">£550 <small>a month</small></p><p>Everything in Core, plus bi-weekly live coaching with Sam's team, Voice AI agents, advanced marketing and lead generation, a priority Q&amp;A place and a certificate of completion.</p><a class="btn btn-ghost tier-btn" href="https://buy.stripe.com/8x28wOgQifHI8jGgND7ok1s">Join Growth for £550 a month</a></div>
-        <div class="tier"><p class="label">Elite · by application</p><p class="price-s">£950 <small>a month</small></p><p>Everything in Growth, plus a monthly 1-to-1 with Sam, a bespoke AI strategy, a 90-day roadmap and priority implementation support. Limited places.</p><a class="btn btn-ghost tier-btn" href="https://buy.stripe.com/aFa4gy9nQeDEdE040R7ok1r">Join Elite for £950 a month</a></div>
+        <div class="tier"><p class="label">Growth</p><p class="price-s">£550 <small>a month</small></p><p>Everything in Core, plus bi-weekly live coaching with Sam's team, Voice AI agents, advanced marketing and lead generation, a priority Q&amp;A place and a certificate of completion.</p><a class="btn btn-gold tier-btn plan-btn" href="https://buy.stripe.com/8x28wOgQifHI8jGgND7ok1s">Join Growth for £550 a month</a></div>
+        <div class="tier"><p class="label">Elite · by application</p><p class="price-s">£950 <small>a month</small></p><p>Everything in Growth, plus a monthly 1-to-1 with Sam, a bespoke AI strategy, a 90-day roadmap and priority implementation support. Limited places.</p><a class="btn btn-gold tier-btn plan-btn" href="https://buy.stripe.com/aFa4gy9nQeDEdE040R7ok1r">Join Elite for £950 a month</a></div>
       </div>
       <p class="guarantee"><b>30-day money-back guarantee on every plan.</b> Work through the first two modules and put them into practice. If it hasn't delivered value, email <span class="copy-mail">hello@aiacademyforbeginners.com</span> within 30 days for a full refund. Teams of five or more: <span class="copy-mail">partnerships@aiacademyforbeginners.com</span>. <a href="https://aiacademyforbeginners.com/plans/">Compare all four plans</a></p>
       <p class="advice"><b>Not sure?</b> Start with the Clinic and clear one bottleneck. Move up when you're ready. Paying for modules you aren't ready to use won't make them useful sooner.</p>
