@@ -350,10 +350,12 @@ details.menu{border:0}
 .plan .price{font-size:2.6rem}
 .plan ul{flex:1 1 auto;align-content:start}
 .plan-foot{display:grid;gap:var(--s2);margin-top:auto;padding-top:var(--s3);border-top:1px solid var(--line)}
-.plan-foot .small{min-height:2.6em}
+.plan-foot{grid-template-rows:auto 4.5em}
+.plan-foot .small{margin:0}
+.plan .label{min-height:2.6em}
 .plan-btn{padding:1rem .9rem;font-size:.98rem;white-space:normal;text-align:center;line-height:1.25;min-height:3.4rem}
 @media (max-width:1100px){.plans{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media (max-width:640px){.plans{grid-template-columns:1fr}.plan-foot .small{min-height:0}}
+@media (max-width:640px){.plans{grid-template-columns:1fr}.plan-foot{grid-template-rows:auto auto}.plan .label{min-height:0}}
 </style>
 <script type="application/ld+json">
 {
@@ -1192,7 +1194,7 @@ details.menu{border:0}
       </div>
       <div class="plans">
         <article class="plan start">
-          <p class="label">The Bottleneck Clinic · start here</p>
+          <p class="label">Bottleneck Clinic · start here</p>
           <p class="price">£19 <small>a month</small></p>
           <ul>
             <li>27 lessons to work through at your own pace</li>
@@ -1202,7 +1204,7 @@ details.menu{border:0}
             <li>Cancel anytime from your account</li>
           </ul>
           <div class="plan-foot">
-            <a class="btn btn-gold plan-btn" href="https://coaching.aiacademyforbeginners.com/revenue-1st-ai-community">Join for £19 a month</a>
+            <a class="btn btn-gold plan-btn" href="https://coaching.aiacademyforbeginners.com/revenue-1st-ai-community">Join the Clinic</a>
             <p class="small">Founding price: the first 300 members keep £19 while they stay active.</p>
           </div>
         </article>
@@ -1217,7 +1219,7 @@ details.menu{border:0}
             <li>Community access</li>
           </ul>
           <div class="plan-foot">
-            <a class="btn btn-gold plan-btn" href="https://buy.stripe.com/dRm28q7fIbrsarOdBr7ok1t">Join Core for £397 a month</a>
+            <a class="btn btn-gold plan-btn" href="https://buy.stripe.com/dRm28q7fIbrsarOdBr7ok1t">Join Core</a>
             <p class="small">Monthly. Upgrade anytime and pay only the difference.</p>
           </div>
         </article>
@@ -1232,7 +1234,7 @@ details.menu{border:0}
             <li>Certificate of completion</li>
           </ul>
           <div class="plan-foot">
-            <a class="btn btn-gold plan-btn" href="https://buy.stripe.com/8x28wOgQifHI8jGgND7ok1s">Join Growth for £550 a month</a>
+            <a class="btn btn-gold plan-btn" href="https://buy.stripe.com/8x28wOgQifHI8jGgND7ok1s">Join Growth</a>
             <p class="small">Monthly. Cancel anytime.</p>
           </div>
         </article>
@@ -1247,7 +1249,7 @@ details.menu{border:0}
             <li>Private Elite channel and workshops</li>
           </ul>
           <div class="plan-foot">
-            <a class="btn btn-gold plan-btn" href="https://buy.stripe.com/aFa4gy9nQeDEdE040R7ok1r">Join Elite for £950 a month</a>
+            <a class="btn btn-gold plan-btn" href="https://buy.stripe.com/aFa4gy9nQeDEdE040R7ok1r">Join Elite</a>
             <p class="small">Limited places.</p>
           </div>
         </article>
