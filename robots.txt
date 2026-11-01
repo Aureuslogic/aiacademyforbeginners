@@ -17,4 +17,19 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
 Sitemap: https://aiacademyforbeginners.com/sitemap.xml
