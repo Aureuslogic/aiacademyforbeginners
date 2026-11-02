@@ -1406,5 +1406,31 @@ details.menu{border:0}
   document.addEventListener("click",function(e){ if(menu.open && !menu.contains(e.target)) menu.open=false; });
 })();
 </script>
+
+<!-- VAPI Voice Agent (restored from the previous homepage; same assistant) -->
+<vapi-widget
+  public-key="6e2fdc9a-d3aa-4ffa-93d2-354175b9e9c2"
+  assistant-id="ff2b8e60-9ca1-4916-ba1a-3fba660d2402"
+  mode="voice"
+  theme="dark"
+  base-bg-color="#0A1328"
+  accent-color="#E2B451"
+  cta-button-color="#13213F"
+  cta-button-text-color="#EEF1F7"
+  border-radius="large"
+  size="full"
+  position="bottom-right"
+  title="TALK TO AN AGENT RIGHT NOW"
+  start-button-text="Start"
+  end-button-text="End Call"
+  chat-first-message="Hey, How can I help you today?"
+  chat-placeholder="Type your message..."
+  voice-show-transcript="false"
+  consent-required="true"
+  consent-title="Terms and conditions"
+  consent-content="By clicking &quot;Agree,&quot; and each time I interact with this AI agent, I consent to the recording, storage, and sharing of my communications with third-party service providers, and as otherwise described in our Terms of Service."
+  consent-storage-key="vapi_widget_consent"
+></vapi-widget>
+<script defer src="https://unpkg.com/@vapi-ai/client-sdk-react/dist/embed/widget.umd.js" type="text/javascript"></script>
 </body>
 </html>
