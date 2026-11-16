@@ -235,5 +235,5 @@ if('IntersectionObserver' in window){var obs=new IntersectionObserver(function(e
 </body>
 </html>`;
 
-fs.writeFileSync('ai_blogs.html', html);
+fs.writeFileSync('ai_blogs/index.html', html);
 console.log('Wrote ai_blogs.html with', posts.length, 'posts');

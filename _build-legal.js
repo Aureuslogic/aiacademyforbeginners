@@ -5,7 +5,7 @@ const root = __dirname;
 
 const policies = [
   {
-    file: 'terms-and-conditions.html',
+    file: 'terms-and-conditions/index.html',
     canonical: '/terms-and-conditions/',
     title: 'Terms and Conditions',
     label: 'Legal',
@@ -97,7 +97,7 @@ For partnership and enterprise enquiries, email <a href="mailto:partnerships@aia
 `,
   },
   {
-    file: 'privacy-policy.html',
+    file: 'privacy-policy/index.html',
     canonical: '/privacy-policy/',
     title: 'Privacy Notice &amp; Data Protection',
     label: 'Data Protection',
@@ -209,7 +209,7 @@ Email for privacy requests: <a href="mailto:hello@aiacademyforbeginners.com">hel
 `,
   },
   {
-    file: 'refund-policy.html',
+    file: 'refund-policy/index.html',
     canonical: '/refund-policy/',
     title: 'Refund and Cancellation Policy',
     label: 'Legal',
@@ -239,7 +239,7 @@ Email for privacy requests: <a href="mailto:hello@aiacademyforbeginners.com">hel
 `,
   },
   {
-    file: 'cookie-policy.html',
+    file: 'cookie-policy/index.html',
     canonical: '/cookie-policy/',
     title: 'Cookie Policy',
     label: 'Legal',
@@ -269,7 +269,7 @@ Email for privacy requests: <a href="mailto:hello@aiacademyforbeginners.com">hel
 `,
   },
   {
-    file: 'disclaimer.html',
+    file: 'disclaimer/index.html',
     canonical: '/disclaimer/',
     title: 'AI Use, Results and Educational Disclaimer',
     label: 'Legal',
