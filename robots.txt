@@ -1,35 +1,26 @@
-# AI Academy for Beginners — allow crawlers including ChatGPT Search
+# AI Academy for Beginners: practical AI training for small businesses and professionals
+# All search engines and AI answer engines are welcome.
+
 User-agent: *
 Allow: /
+Disallow: /google-apps-script/
+Disallow: /contract-opportunities-registrations.csv
 
-User-agent: OAI-SearchBot
-Allow: /
-
-User-agent: GPTBot
-Allow: /
-
-User-agent: ClaudeBot
-Allow: /
-
-User-agent: PerplexityBot
-Allow: /
-
-User-agent: Google-Extended
-Allow: /
-
-User-agent: ChatGPT-User
-Allow: /
-
-User-agent: Claude-SearchBot
-Allow: /
-
-User-agent: Claude-User
-Allow: /
-
+User-agent: Googlebot
 User-agent: Bingbot
-Allow: /
-
+User-agent: Google-Extended
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: PerplexityBot
+User-agent: Perplexity-User
 User-agent: Applebot
+User-agent: Applebot-Extended
 Allow: /
+Disallow: /google-apps-script/
+Disallow: /contract-opportunities-registrations.csv
 
 Sitemap: https://aiacademyforbeginners.com/sitemap.xml
