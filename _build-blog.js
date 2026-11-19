@@ -75,7 +75,7 @@ const posts = [
 
 function card(p) {
   return `<article class="blog-card fade-in">
-  <a href="#${p.slug}" class="blog-card-img-wrap"><img src="${p.img}" alt="" loading="lazy" width="600" height="340"/></a>
+  <a href="#${p.slug}" class="blog-card-img-wrap"><img src="${p.img}" alt="${p.title.replace(/"/g, '').replace(/ — /g, ': ')}" loading="lazy" width="600" height="340"/></a>
   <div class="blog-card-body">
     <time class="blog-date">${p.date}</time>
     <h2><a href="#${p.slug}">${p.title}</a></h2>
@@ -96,7 +96,7 @@ function article(p) {
   <a href="#" class="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false">↑ Back to all posts</a>
   <time class="blog-date">${p.date}</time>
   <h2>${p.title}</h2>
-  ${p.img && !p.youtube ? `<img class="blog-hero-img" src="${p.img}" alt="" loading="lazy"/>` : ''}
+  ${p.img && !p.youtube ? `<img class="blog-hero-img" src="${p.img}" alt="${p.title.replace(/"/g, '').replace(/ — /g, ': ')}" loading="lazy"/>` : ''}
   ${media}
   <div class="blog-body">${p.body}</div>
 </article>`;
