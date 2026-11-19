@@ -39,3 +39,7 @@
 /untitled-page/ / 301
 /new-page/ / 301
 /new-page-2/ / 301
+
+# Spam URLs from third-party links (never part of this site): tell search engines they are gone
+/shop/*      /gone.html  410!
+/netlify/*   /gone.html  410!
